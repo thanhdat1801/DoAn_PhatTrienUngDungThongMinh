@@ -18,7 +18,7 @@ namespace DoAn_QuanLyKho
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmManagerment());
+            Application.Run(new frmLogin());
         }
     }
 }
