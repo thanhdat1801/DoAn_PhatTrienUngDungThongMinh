@@ -84,6 +84,12 @@
     <Compile Include="Control\frmPhanQuyen.Designer.cs">
       <DependentUpon>frmPhanQuyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\frmSetupCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSetupCompany.Designer.cs">
+      <DependentUpon>frmSetupCompany.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\frmStart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,11 @@
     <Compile Include="frmQuanLyHeThong.Designer.cs">
       <DependentUpon>frmQuanLyHeThong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Modules\DataSet_QuanLyKho.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -132,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control\frmPhanQuyen.resx">
       <DependentUpon>frmPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSetupCompany.resx">
+      <DependentUpon>frmSetupCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\frmStart.resx">
       <DependentUpon>frmStart.cs</DependentUpon>
@@ -160,6 +174,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
+    <None Include="Modules\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Modules\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Modules\DataSet_QuanLyKho.xsc">
       <DependentUpon>DataSet_QuanLyKho.xsd</DependentUpon>
     </None>
@@ -273,6 +298,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\redo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inserttableoffigures_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inserttableoffigures_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

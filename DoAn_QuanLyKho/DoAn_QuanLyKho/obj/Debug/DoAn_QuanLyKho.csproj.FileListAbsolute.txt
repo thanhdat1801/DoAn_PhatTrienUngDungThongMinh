@@ -169,3 +169,4 @@ C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Do
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\DoAn_QuanLyKho\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\DoAn_QuanLyKho\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\DoAn_QuanLyKho\obj\Debug\DoAn_QuanLyKho.Control.frmStart.resources
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\DoAn_QuanLyKho\obj\Debug\DoAn_QuanLyKho.Control.frmSetupCompany.resources

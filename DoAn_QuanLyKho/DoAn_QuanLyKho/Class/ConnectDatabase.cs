@@ -11,11 +11,11 @@ namespace DoAn_QuanLyKho.Class
 {
     public class ConnectDatabase
     {
+        SqlConnection _Sqlconn = new SqlConnection(Properties.Settings.Default.Connect);
         public int Check_Config()
         {
             if (Properties.Settings.Default.Connect == string.Empty)
                 return 1;// Chuỗi cấu hình không tồn tại
-            SqlConnection _Sqlconn = new SqlConnection(Properties.Settings.Default.Connect);
             try
             {
                 if (_Sqlconn.State == System.Data.ConnectionState.Closed)
@@ -26,6 +26,34 @@ namespace DoAn_QuanLyKho.Class
             {
                 return 2;// Chuỗi cấu hình không phù hợp.
             }
+        }
+        public int Check_Company()
+        {
+            int kq = 0;
+            SqlDataAdapter daCompany = new SqlDataAdapter("select * from ThietLapCongTy", Properties.Settings.Default.Connect);
+            DataTable dt = new DataTable();
+            daCompany.Fill(dt);
+            foreach (DataRow row in dt.Rows)
+            {
+                if(row["TenCongTy"] == DBNull.Value)
+                {
+                    kq = 0;
+                    break;
+                }
+                else
+                {
+                    kq = 1;
+                    break;
+                }    
+            }
+            return kq;
+        }
+
+        public void Save_Company(string strTenCongTy, string strChiNhanhChinh, string strChiNhanhPhu, string strThanhPho, string strMaBuuDien, string strSoSerial, string strSoDT1, string strSoDT2, string strSoFAX, string strEmailDK, string strKichHoat)
+        {
+            string strSQL = "INSERT INTO ThietLapCongTy(TenCongTy, ChiNhanhChi, ChiNhanhPhu, ThanhPho, MaBuuDien, SoSerial, SoDT1, SoDT2, SoFAX, EmailDK, KichHoat) VALUES("; strSQL += "N'" + strTenCongTy + "',N'" + strChiNhanhChinh + "',N'" + strChiNhanhPhu + "',N'" + strThanhPho + "','" + strMaBuuDien + "','" + strSoSerial + "','" + strSoDT1 + "','" + strSoDT2 + "','" + strSoFAX + "','" + strEmailDK + "','" + strKichHoat + "','";
+            SqlCommand sqlCommand = new SqlCommand(strSQL, _Sqlconn);
+            sqlCommand.ExecuteNonQuery();
         }
 
         public int Check_User(string pUser, string pPass)

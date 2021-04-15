@@ -78,5 +78,16 @@ namespace DoAn_QuanLyKho
         {
             
         }
+
+        private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem6_ItemClick_1(object sender, ItemClickEventArgs e)
+        {
+            Control.frmSetupCompany frm = new Control.frmSetupCompany();
+            openSubForm(frm);
+        }
     }
 }

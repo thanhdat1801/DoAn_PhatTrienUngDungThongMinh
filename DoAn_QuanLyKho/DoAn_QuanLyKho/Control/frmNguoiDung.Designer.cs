@@ -30,26 +30,26 @@ namespace DoAn_QuanLyKho.Control
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNguoiDung));
             System.Windows.Forms.Label tenDangNhapLabel;
             System.Windows.Forms.Label matKhauLabel;
             System.Windows.Forms.Label hoatDongLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNguoiDung));
             this.dataSet_QuanLyKho = new DoAn_QuanLyKho.Modules.DataSet_QuanLyKho();
             this.qL_NguoiDungBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qL_NguoiDungTableAdapter = new DoAn_QuanLyKho.Modules.DataSet_QuanLyKhoTableAdapters.QL_NguoiDungTableAdapter();
             this.tableAdapterManager = new DoAn_QuanLyKho.Modules.DataSet_QuanLyKhoTableAdapters.TableAdapterManager();
             this.qL_NguoiDungBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.qL_NguoiDungBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.qL_NguoiDungGridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -69,6 +69,33 @@ namespace DoAn_QuanLyKho.Control
             ((System.ComponentModel.ISupportInitialize)(this.matKhauTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoatDongCheckEdit.Properties)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tenDangNhapLabel
+            // 
+            tenDangNhapLabel.AutoSize = true;
+            tenDangNhapLabel.Location = new System.Drawing.Point(16, 56);
+            tenDangNhapLabel.Name = "tenDangNhapLabel";
+            tenDangNhapLabel.Size = new System.Drawing.Size(106, 17);
+            tenDangNhapLabel.TabIndex = 2;
+            tenDangNhapLabel.Text = "Tên đăng nhập:";
+            // 
+            // matKhauLabel
+            // 
+            matKhauLabel.AutoSize = true;
+            matKhauLabel.Location = new System.Drawing.Point(16, 84);
+            matKhauLabel.Name = "matKhauLabel";
+            matKhauLabel.Size = new System.Drawing.Size(69, 17);
+            matKhauLabel.TabIndex = 4;
+            matKhauLabel.Text = "Mật khẩu:";
+            // 
+            // hoatDongLabel
+            // 
+            hoatDongLabel.AutoSize = true;
+            hoatDongLabel.Location = new System.Drawing.Point(16, 112);
+            hoatDongLabel.Name = "hoatDongLabel";
+            hoatDongLabel.Size = new System.Drawing.Size(78, 17);
+            hoatDongLabel.TabIndex = 6;
+            hoatDongLabel.Text = "Hoạt động:";
             // 
             // dataSet_QuanLyKho
             // 
@@ -93,6 +120,7 @@ namespace DoAn_QuanLyKho.Control
             this.tableAdapterManager.DM_ManHinhTableAdapter = null;
             this.tableAdapterManager.HangHoaTableAdapter = null;
             this.tableAdapterManager.NhomHangTableAdapter = null;
+            this.tableAdapterManager.QL_NguoiDungNhomNguoiDungDKTableAdapter = null;
             this.tableAdapterManager.QL_NguoiDungNhomNguoiDungTableAdapter = null;
             this.tableAdapterManager.QL_NguoiDungTableAdapter = this.qL_NguoiDungTableAdapter;
             this.tableAdapterManager.QL_NhomNguoiDungTableAdapter = null;
@@ -126,9 +154,34 @@ namespace DoAn_QuanLyKho.Control
             this.qL_NguoiDungBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.qL_NguoiDungBindingNavigator.Name = "qL_NguoiDungBindingNavigator";
             this.qL_NguoiDungBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.qL_NguoiDungBindingNavigator.Size = new System.Drawing.Size(787, 27);
+            this.qL_NguoiDungBindingNavigator.Size = new System.Drawing.Size(787, 31);
             this.qL_NguoiDungBindingNavigator.TabIndex = 0;
             this.qL_NguoiDungBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -136,7 +189,7 @@ namespace DoAn_QuanLyKho.Control
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -145,13 +198,13 @@ namespace DoAn_QuanLyKho.Control
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -163,17 +216,10 @@ namespace DoAn_QuanLyKho.Control
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -181,7 +227,7 @@ namespace DoAn_QuanLyKho.Control
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -190,38 +236,20 @@ namespace DoAn_QuanLyKho.Control
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // qL_NguoiDungBindingNavigatorSaveItem
             // 
             this.qL_NguoiDungBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.qL_NguoiDungBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("qL_NguoiDungBindingNavigatorSaveItem.Image")));
             this.qL_NguoiDungBindingNavigatorSaveItem.Name = "qL_NguoiDungBindingNavigatorSaveItem";
-            this.qL_NguoiDungBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.qL_NguoiDungBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.qL_NguoiDungBindingNavigatorSaveItem.Text = "Save Data";
             this.qL_NguoiDungBindingNavigatorSaveItem.Click += new System.EventHandler(this.qL_NguoiDungBindingNavigatorSaveItem_Click_4);
             // 
@@ -241,15 +269,6 @@ namespace DoAn_QuanLyKho.Control
             this.gridView1.GridControl = this.qL_NguoiDungGridControl;
             this.gridView1.Name = "gridView1";
             // 
-            // tenDangNhapLabel
-            // 
-            tenDangNhapLabel.AutoSize = true;
-            tenDangNhapLabel.Location = new System.Drawing.Point(16, 56);
-            tenDangNhapLabel.Name = "tenDangNhapLabel";
-            tenDangNhapLabel.Size = new System.Drawing.Size(106, 17);
-            tenDangNhapLabel.TabIndex = 2;
-            tenDangNhapLabel.Text = "Tên đăng nhập:";
-            // 
             // tenDangNhapTextEdit
             // 
             this.tenDangNhapTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.qL_NguoiDungBindingSource, "TenDangNhap", true));
@@ -258,15 +277,6 @@ namespace DoAn_QuanLyKho.Control
             this.tenDangNhapTextEdit.Size = new System.Drawing.Size(298, 22);
             this.tenDangNhapTextEdit.TabIndex = 3;
             // 
-            // matKhauLabel
-            // 
-            matKhauLabel.AutoSize = true;
-            matKhauLabel.Location = new System.Drawing.Point(16, 84);
-            matKhauLabel.Name = "matKhauLabel";
-            matKhauLabel.Size = new System.Drawing.Size(69, 17);
-            matKhauLabel.TabIndex = 4;
-            matKhauLabel.Text = "Mật khẩu:";
-            // 
             // matKhauTextEdit
             // 
             this.matKhauTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.qL_NguoiDungBindingSource, "MatKhau", true));
@@ -274,15 +284,6 @@ namespace DoAn_QuanLyKho.Control
             this.matKhauTextEdit.Name = "matKhauTextEdit";
             this.matKhauTextEdit.Size = new System.Drawing.Size(298, 22);
             this.matKhauTextEdit.TabIndex = 5;
-            // 
-            // hoatDongLabel
-            // 
-            hoatDongLabel.AutoSize = true;
-            hoatDongLabel.Location = new System.Drawing.Point(16, 112);
-            hoatDongLabel.Name = "hoatDongLabel";
-            hoatDongLabel.Size = new System.Drawing.Size(78, 17);
-            hoatDongLabel.TabIndex = 6;
-            hoatDongLabel.Text = "Hoạt động:";
             // 
             // hoatDongCheckEdit
             // 

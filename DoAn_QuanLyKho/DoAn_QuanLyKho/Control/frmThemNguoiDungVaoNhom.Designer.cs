@@ -170,6 +170,7 @@ namespace DoAn_QuanLyKho.Control
             this.qL_NguoiDungDataGridView.Name = "qL_NguoiDungDataGridView";
             this.qL_NguoiDungDataGridView.RowHeadersWidth = 51;
             this.qL_NguoiDungDataGridView.RowTemplate.Height = 24;
+            this.qL_NguoiDungDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.qL_NguoiDungDataGridView.Size = new System.Drawing.Size(513, 525);
             this.qL_NguoiDungDataGridView.TabIndex = 7;
             // 
@@ -210,6 +211,7 @@ namespace DoAn_QuanLyKho.Control
             this.qL_NguoiDungNhomNguoiDungDKDataGridView.Name = "qL_NguoiDungNhomNguoiDungDKDataGridView";
             this.qL_NguoiDungNhomNguoiDungDKDataGridView.RowHeadersWidth = 51;
             this.qL_NguoiDungNhomNguoiDungDKDataGridView.RowTemplate.Height = 24;
+            this.qL_NguoiDungNhomNguoiDungDKDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.qL_NguoiDungNhomNguoiDungDKDataGridView.Size = new System.Drawing.Size(656, 525);
             this.qL_NguoiDungNhomNguoiDungDKDataGridView.TabIndex = 7;
             // 

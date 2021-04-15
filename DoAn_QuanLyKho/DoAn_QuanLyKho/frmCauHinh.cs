@@ -25,11 +25,18 @@ namespace DoAn_QuanLyKho
             try
             {
                 connect.SaveConfig(cboSevername.Text, txtUsername.Text, txtPassword.Text, cboDataname.Text);
-                //frmCauHinh ch = new frmCauHinh();
-                //ch.Hide();
-                this.Hide();
-                frmLogin frm = new frmLogin();
-                frm.ShowDialog();
+                if (connect.Check_Company() == 1)
+                {
+                    this.Hide();
+                    frmLogin frm = new frmLogin();
+                    frm.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    Control.frmSetupCompany frm = new Control.frmSetupCompany();
+                    frm.Show();
+                }    
             }
             catch
             {

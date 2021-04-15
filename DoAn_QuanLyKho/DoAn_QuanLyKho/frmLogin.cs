@@ -20,6 +20,40 @@ namespace DoAn_QuanLyKho
             InitializeComponent();
         }
 
+        private void ReadSettings()
+        {
+            if (Properties.Settings.Default.RememberMe == "true")
+            {
+                txtUser.Text = Properties.Settings.Default.UserName;
+                txtPass.Text = Properties.Settings.Default.Password;
+                checkEdit2.Checked = true;
+            }
+            else
+            {
+                txtUser.Text = "";
+                txtPass.Text = "";
+                checkEdit2.Checked = false;
+            }
+        }
+
+        private void SaveSettings()
+        {
+            if (checkEdit2.Checked)
+            {
+                Properties.Settings.Default.UserName = this.txtUser.Text;
+                Properties.Settings.Default.Password = this.txtPass.Text;
+                Properties.Settings.Default.RememberMe = "true";
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.UserName = this.txtUser.Text;
+                Properties.Settings.Default.Password = "";
+                Properties.Settings.Default.RememberMe = "false";
+                Properties.Settings.Default.Save();
+            }
+        }
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtUser.Text.Trim()))
@@ -74,6 +108,7 @@ namespace DoAn_QuanLyKho
             }
             else
             {
+                SaveSettings();
                 frmQuanLyHeThong frm = new frmQuanLyHeThong();
                 frm.ShowDialog();
                 this.Hide();
@@ -82,12 +117,35 @@ namespace DoAn_QuanLyKho
 
         private void btnThoat_Click_1(object sender, EventArgs e)
         {
+            SaveSettings();
             Application.Exit();
         }
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void checkEdit1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkEdit1.Checked == true)
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPass.UseSystemPasswordChar = true;
+            }    
+        }
+
+        private void checkEdit2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            ReadSettings();
         }
     }
 }
