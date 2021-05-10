@@ -322,6 +322,7 @@ namespace GUI
             this.Name = "frmNguoiDungQuanTri";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Người dùng quản trị";
+            this.Load += new System.EventHandler(this.frmNguoiDungQuanTri_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

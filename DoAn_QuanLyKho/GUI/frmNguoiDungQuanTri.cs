@@ -27,5 +27,10 @@ namespace GUI
                 Application.Exit();
             }
         }
+
+        private void frmNguoiDungQuanTri_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

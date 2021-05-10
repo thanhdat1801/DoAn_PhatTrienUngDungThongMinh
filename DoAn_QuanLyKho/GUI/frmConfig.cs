@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL_DAL;
 
 namespace GUI
 {
@@ -31,6 +32,52 @@ namespace GUI
             {
                 Application.Exit();
             }    
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string connectionString = string.Format("Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3};", cboServername.selectedValue, txtDataname.Text, txtUsername.Text, txtPass.Text);
+            try
+            {
+                SQLHelper helper = new SQLHelper(connectionString);
+                if (helper.IsConnection)
+                    MessageBox.Show("Test connection succeeded.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void frmConfig_Load(object sender, EventArgs e)
+        {
+            //Add server name to combobox
+            cboServername.AddItem(".");
+            cboServername.AddItem("(local)");
+            cboServername.AddItem(@".\SQLEXPRESS");
+            cboServername.AddItem(string.Format(@"{0}\SQLEXPRESS", Environment.MachineName));
+            cboServername.selectedIndex = 3;
+        }
+
+        private void btnSaveConfig_Click(object sender, EventArgs e)
+        {
+            string connectionString = string.Format("Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3};", cboServername.selectedValue, txtDataname.Text, txtUsername.Text, txtPass.Text);
+            try
+            {
+                SQLHelper helper = new SQLHelper(connectionString);
+                if (helper.IsConnection)
+                {
+                    AppSetting setting = new AppSetting();
+                    //MyDllConfig config = new MyDllConfig();
+                    //setting.GetConnectionString("DoAn_QuanLyKhoConnectionString");
+                    setting.SaveConnectionString("BLL_DAL.Properties.Settings.DoAn_QuanLyKhoConnectionString", connectionString);
+                    MessageBox.Show("Your connection string has been successfully save", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }   
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

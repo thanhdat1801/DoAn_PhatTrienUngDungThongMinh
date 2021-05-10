@@ -54,12 +54,12 @@ namespace GUI
             this.label11 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox8 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label12 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox9 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label13 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox10 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label14 = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtMail1 = new Custom_Control.txtMail();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -408,31 +408,12 @@ namespace GUI
             this.label12.TabIndex = 22;
             this.label12.Text = "&Số FAX:";
             // 
-            // bunifuMaterialTextbox9
-            // 
-            this.bunifuMaterialTextbox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox9.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox9.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox9.HintText = "";
-            this.bunifuMaterialTextbox9.isPassword = false;
-            this.bunifuMaterialTextbox9.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.bunifuMaterialTextbox9.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.bunifuMaterialTextbox9.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.bunifuMaterialTextbox9.LineThickness = 3;
-            this.bunifuMaterialTextbox9.Location = new System.Drawing.Point(893, 465);
-            this.bunifuMaterialTextbox9.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuMaterialTextbox9.Name = "bunifuMaterialTextbox9";
-            this.bunifuMaterialTextbox9.Size = new System.Drawing.Size(396, 38);
-            this.bunifuMaterialTextbox9.TabIndex = 25;
-            this.bunifuMaterialTextbox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label13.Location = new System.Drawing.Point(889, 437);
+            this.label13.Location = new System.Drawing.Point(889, 431);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(259, 23);
@@ -497,16 +478,35 @@ namespace GUI
             this.button1.Text = "&Lưu thiết lập công ty";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // txtMail1
+            // 
+            this.txtMail1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMail1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtMail1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMail1.HintForeColor = System.Drawing.Color.Empty;
+            this.txtMail1.HintText = "";
+            this.txtMail1.isPassword = false;
+            this.txtMail1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.txtMail1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.txtMail1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.txtMail1.LineThickness = 3;
+            this.txtMail1.Location = new System.Drawing.Point(893, 458);
+            this.txtMail1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMail1.Name = "txtMail1";
+            this.txtMail1.Size = new System.Drawing.Size(396, 44);
+            this.txtMail1.TabIndex = 30;
+            this.txtMail1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // frmSetupCompany
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1318, 742);
+            this.Controls.Add(this.txtMail1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.bunifuMaterialTextbox10);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.bunifuMaterialTextbox9);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.bunifuMaterialTextbox8);
             this.Controls.Add(this.label12);
@@ -550,7 +550,6 @@ namespace GUI
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox10;
         private System.Windows.Forms.Label label14;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox9;
         private System.Windows.Forms.Label label13;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox8;
         private System.Windows.Forms.Label label12;
@@ -572,5 +571,6 @@ namespace GUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Button button1;
+        private Custom_Control.txtMail txtMail1;
     }
 }

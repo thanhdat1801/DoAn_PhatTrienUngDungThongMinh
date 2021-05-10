@@ -44,6 +44,7 @@
     <Reference Include="DevExpress.XtraEditors.v20.1" />
     <Reference Include="DevExpress.Printing.v20.1.Core" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -175,6 +176,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wms_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_DAL\BLL_DAL.csproj">
+      <Project>{176ae00d-4aa4-4123-95e2-2444d64d28af}</Project>
+      <Name>BLL_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Custom_Control\Custom_Control.csproj">
+      <Project>{0d15a842-fd87-499d-a836-aa74814ee0af}</Project>
+      <Name>Custom_Control</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

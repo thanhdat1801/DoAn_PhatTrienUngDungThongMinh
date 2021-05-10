@@ -41,11 +41,12 @@ namespace GUI
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cboDatabase = new Bunifu.Framework.UI.BunifuDropdown();
             this.txtUsername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnTestConn = new System.Windows.Forms.Button();
             this.lblClose = new System.Windows.Forms.Label();
+            this.txtDataname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnSaveConfig = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -111,9 +112,9 @@ namespace GUI
             this.label2.Location = new System.Drawing.Point(436, 57);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 37);
+            this.label2.Size = new System.Drawing.Size(368, 37);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Config your data";
+            this.label2.Text = "Configuration your data";
             // 
             // label3
             // 
@@ -178,21 +179,6 @@ namespace GUI
             this.label6.TabIndex = 11;
             this.label6.Text = "&Database:";
             // 
-            // cboDatabase
-            // 
-            this.cboDatabase.BackColor = System.Drawing.Color.Transparent;
-            this.cboDatabase.BorderRadius = 3;
-            this.cboDatabase.ForeColor = System.Drawing.Color.White;
-            this.cboDatabase.Items = new string[0];
-            this.cboDatabase.Location = new System.Drawing.Point(442, 458);
-            this.cboDatabase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cboDatabase.Name = "cboDatabase";
-            this.cboDatabase.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.cboDatabase.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.cboDatabase.selectedIndex = -1;
-            this.cboDatabase.Size = new System.Drawing.Size(433, 43);
-            this.cboDatabase.TabIndex = 4;
-            // 
             // txtUsername
             // 
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -210,6 +196,7 @@ namespace GUI
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(426, 38);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.Text = "User name";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtUsername.OnValueChanged += new System.EventHandler(this.txtUsername_OnValueChanged);
             // 
@@ -220,7 +207,7 @@ namespace GUI
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPass.HintForeColor = System.Drawing.Color.Empty;
             this.txtPass.HintText = "";
-            this.txtPass.isPassword = false;
+            this.txtPass.isPassword = true;
             this.txtPass.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtPass.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
@@ -230,21 +217,23 @@ namespace GUI
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(426, 38);
             this.txtPass.TabIndex = 3;
+            this.txtPass.Text = "Password";
             this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // btnSave
+            // btnTestConn
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(442, 543);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(432, 42);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.Text = "Test connection and Save config";
-            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnTestConn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.btnTestConn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestConn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestConn.ForeColor = System.Drawing.Color.White;
+            this.btnTestConn.Location = new System.Drawing.Point(442, 543);
+            this.btnTestConn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTestConn.Name = "btnTestConn";
+            this.btnTestConn.Size = new System.Drawing.Size(194, 42);
+            this.btnTestConn.TabIndex = 5;
+            this.btnTestConn.Text = "&Test connection\r\n";
+            this.btnTestConn.UseVisualStyleBackColor = false;
+            this.btnTestConn.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblClose
             // 
@@ -259,16 +248,53 @@ namespace GUI
             this.lblClose.Text = "x";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
+            // txtDataname
+            // 
+            this.txtDataname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDataname.Enabled = false;
+            this.txtDataname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDataname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDataname.HintForeColor = System.Drawing.Color.Empty;
+            this.txtDataname.HintText = "";
+            this.txtDataname.isPassword = false;
+            this.txtDataname.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.txtDataname.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.txtDataname.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.txtDataname.LineThickness = 3;
+            this.txtDataname.Location = new System.Drawing.Point(443, 475);
+            this.txtDataname.Margin = new System.Windows.Forms.Padding(5);
+            this.txtDataname.Name = "txtDataname";
+            this.txtDataname.Size = new System.Drawing.Size(426, 38);
+            this.txtDataname.TabIndex = 17;
+            this.txtDataname.Text = "DoAn_QuanLyKho";
+            this.txtDataname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnSaveConfig
+            // 
+            this.btnSaveConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.btnSaveConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveConfig.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveConfig.ForeColor = System.Drawing.Color.White;
+            this.btnSaveConfig.Location = new System.Drawing.Point(675, 543);
+            this.btnSaveConfig.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSaveConfig.Name = "btnSaveConfig";
+            this.btnSaveConfig.Size = new System.Drawing.Size(194, 42);
+            this.btnSaveConfig.TabIndex = 18;
+            this.btnSaveConfig.Text = "&Save config";
+            this.btnSaveConfig.UseVisualStyleBackColor = false;
+            this.btnSaveConfig.Click += new System.EventHandler(this.btnSaveConfig_Click);
+            // 
             // frmConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(882, 719);
+            this.Controls.Add(this.btnSaveConfig);
+            this.Controls.Add(this.txtDataname);
             this.Controls.Add(this.lblClose);
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnTestConn);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.cboDatabase);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -280,6 +306,7 @@ namespace GUI
             this.Name = "frmConfig";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConfig";
+            this.Load += new System.EventHandler(this.frmConfig_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -299,12 +326,13 @@ namespace GUI
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuDropdown cboServername;
         private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuDropdown cboDatabase;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPass;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnTestConn;
         private System.Windows.Forms.Label lblClose;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtDataname;
+        private System.Windows.Forms.Button btnSaveConfig;
     }
 }

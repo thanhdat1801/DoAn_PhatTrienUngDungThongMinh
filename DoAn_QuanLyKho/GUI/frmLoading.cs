@@ -113,7 +113,7 @@ namespace GUI
                 //    }
                 //}
                 timer.Stop();
-                frmSetupCompany frm = new frmSetupCompany();
+                frmLogin frm = new frmLogin();
                 frm.Show();
                 this.Hide();
             }

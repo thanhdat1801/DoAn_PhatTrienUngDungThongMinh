@@ -32,10 +32,11 @@ namespace GUI
             this.components = new System.ComponentModel.Container();
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.panelRight = new System.Windows.Forms.Panel();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkRememberMe = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.label6 = new System.Windows.Forms.Label();
             this.chkShowPass = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,17 +45,16 @@ namespace GUI
             this.lblClose = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label9 = new System.Windows.Forms.Label();
-            this.chkRememberMe = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelRight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // doubleBitmapControl1
@@ -81,7 +81,7 @@ namespace GUI
             this.panel1.Controls.Add(this.chkRememberMe);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.chkShowPass);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txtPass);
             this.panel1.Controls.Add(this.label4);
@@ -96,9 +96,35 @@ namespace GUI
             this.panel1.Size = new System.Drawing.Size(456, 728);
             this.panel1.TabIndex = 3;
             // 
+            // chkRememberMe
+            // 
+            this.chkRememberMe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.chkRememberMe.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.chkRememberMe.Checked = false;
+            this.chkRememberMe.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.chkRememberMe.ForeColor = System.Drawing.Color.White;
+            this.chkRememberMe.Location = new System.Drawing.Point(25, 359);
+            this.chkRememberMe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkRememberMe.Name = "chkRememberMe";
+            this.chkRememberMe.Size = new System.Drawing.Size(20, 20);
+            this.chkRememberMe.TabIndex = 4;
+            this.chkRememberMe.OnChange += new System.EventHandler(this.chkRememberMe_OnChange);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.label6.Location = new System.Drawing.Point(58, 359);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(209, 23);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "&Nhớ tài khoản của tôi";
+            // 
             // chkShowPass
             // 
-            this.chkShowPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.chkShowPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.chkShowPass.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.chkShowPass.Checked = false;
             this.chkShowPass.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
@@ -110,19 +136,20 @@ namespace GUI
             this.chkShowPass.TabIndex = 3;
             this.chkShowPass.OnChange += new System.EventHandler(this.chkShowPass_OnChange);
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(27, 411);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(396, 42);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "&Đăng nhập";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(27, 411);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(396, 42);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "&Đăng nhập";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label7
             // 
@@ -154,6 +181,7 @@ namespace GUI
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(396, 38);
             this.txtPass.TabIndex = 2;
+            this.txtPass.Text = "Password";
             this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label4
@@ -185,6 +213,7 @@ namespace GUI
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(396, 38);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.Text = "Username";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label3
@@ -237,6 +266,18 @@ namespace GUI
             this.panelLeft.Size = new System.Drawing.Size(428, 728);
             this.panelLeft.TabIndex = 2;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(22, 675);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(260, 30);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Beta Version 1.0 2021";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -250,48 +291,6 @@ namespace GUI
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 25;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(22, 675);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(260, 30);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Beta Version 1.0 2021";
-            // 
-            // chkRememberMe
-            // 
-            this.chkRememberMe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.chkRememberMe.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.chkRememberMe.Checked = false;
-            this.chkRememberMe.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.chkRememberMe.ForeColor = System.Drawing.Color.White;
-            this.chkRememberMe.Location = new System.Drawing.Point(25, 359);
-            this.chkRememberMe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkRememberMe.Name = "chkRememberMe";
-            this.chkRememberMe.Size = new System.Drawing.Size(20, 20);
-            this.chkRememberMe.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label6.Location = new System.Drawing.Point(58, 359);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 23);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "&Nhớ tài khoản của tôi";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
@@ -302,6 +301,11 @@ namespace GUI
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // frmLogin
             // 
@@ -315,13 +319,14 @@ namespace GUI
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panelRight.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,7 +337,7 @@ namespace GUI
         private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCheckbox chkShowPass;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPass;
         private System.Windows.Forms.Label label4;
