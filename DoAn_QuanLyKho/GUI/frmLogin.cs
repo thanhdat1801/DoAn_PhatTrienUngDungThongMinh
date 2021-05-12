@@ -34,8 +34,8 @@ namespace GUI
             }
             else
             {
-                txtUsername.Text = "";
-                txtPass.Text = "";
+                txtUsername.Text = "User name";
+                txtPass.Text = "Password";
                 chkRememberMe.Checked = false;
             }
         }
@@ -83,9 +83,17 @@ namespace GUI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(login.kiemTraDangNhap(txtUsername.Text, txtPass.Text) == 1)
+            AppSetting setting = new AppSetting();
+            if(login.IsvalidUser(txtUsername.Text, txtPass.Text))
             {
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                using (WaitForm1 frm = new WaitForm1(setting.SaveData))
+                {
+                    frm.ShowDialog(this);
+                }
+                frmQuanLyKho frmQuanLyKho = new frmQuanLyKho();
+                frmQuanLyKho.Show();
+                this.Hide();
             }
             else
             {
@@ -101,6 +109,11 @@ namespace GUI
         private void frmLogin_Load(object sender, EventArgs e)
         {
             ReadSettings();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

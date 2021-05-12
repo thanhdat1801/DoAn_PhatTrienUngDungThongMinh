@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_UserAdmin.cs" />
     <Compile Include="AppSetting.cs" />
     <Compile Include="Check_Login.cs" />
+    <Compile Include="Company_Management.cs" />
     <Compile Include="DefendPassword.cs" />
     <Compile Include="MyDllConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

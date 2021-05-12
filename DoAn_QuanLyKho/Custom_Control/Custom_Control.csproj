@@ -55,6 +55,12 @@
     <Compile Include="txtMail.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="txtNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="txtPass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="txtMail.resx">

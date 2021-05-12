@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using System.IO;
+using System.Configuration;
+using System.Threading;
+using System.Data.Sql;
 
 namespace GUI
 {
@@ -71,13 +75,25 @@ namespace GUI
                     //MyDllConfig config = new MyDllConfig();
                     //setting.GetConnectionString("DoAn_QuanLyKhoConnectionString");
                     setting.SaveConnectionString("BLL_DAL.Properties.Settings.DoAn_QuanLyKhoConnectionString", connectionString);
-                    MessageBox.Show("Your connection string has been successfully save", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    using(WaitForm1 frm = new WaitForm1(setting.SaveData))
+                    {
+                        frm.ShowDialog(this);
+                    }
+                    MessageBox.Show("Your connection string has been successfully save.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmSetupCompany frmSetup = new frmSetupCompany();
+                    frmSetup.Show();
+                    this.Hide();
                 }   
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void cboServername_onItemSelected(object sender, EventArgs e)
+        {
+
         }
     }
 }

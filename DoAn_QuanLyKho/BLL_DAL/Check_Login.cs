@@ -8,23 +8,32 @@ namespace BLL_DAL
 {
     public class Check_Login
     {
-        QuanLyKhoDataContext quanLyKho = new QuanLyKhoDataContext();
+        public static AppSetting setting = new AppSetting();
+        QuanLyKhoDataContext quanLyKho = new QuanLyKhoDataContext(setting.GetConnectionString("BLL_DAL.Properties.Settings.DoAn_QuanLyKhoConnectionString"));
+        DefendPassword pass = new DefendPassword();
 
         public Check_Login()
         {
 
         }
 
-        public int kiemTraDangNhap(string strTenDangNhap, string strMatKhau)
+        public bool IsvalidUser(string strUser, string strPass)
         {
-            IQueryable<QL_NguoiDung> kq = quanLyKho.QL_NguoiDungs.Where(t => t.TenDangNhap == strTenDangNhap && t.MatKhau == strMatKhau);
-            if (kq == null)
+            try
             {
-                return 0; //Không tìm thấy đăng nhập
+                var loginEnable = from p in quanLyKho.QL_NguoiDungs where p.TenDangNhap == strUser && p.MatKhau == pass.Encrypt(strPass) && p.HoatDong == true select p;
+                if (loginEnable.Any())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch
             {
-                return 1; //Đăng nhập thành công
+                return false;
             }
         }
     }

@@ -2,14 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BLL_DAL.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="DoAn_QuanLyKhoConnectionString" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=LAPTOP-UHMPS5MJ\SQLEXPRESS;Initial Catalog=DoAn_QuanLyKho;Persist Security Info=True;User ID=sa;Password=sa2012&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=LAPTOP-UHMPS5MJ\SQLEXPRESS;Initial Catalog=DoAn_QuanLyKho;Persist Security Info=True;User ID=sa;Password=sa2012</Value>
-    </Setting>
     <Setting Name="RememberMe" Type="System.String" Scope="User">
       <Value Profile="(Default)">true</Value>
     </Setting>
@@ -18,6 +10,14 @@
     </Setting>
     <Setting Name="Password" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DoAn_QuanLyKhoConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=LAPTOP-UHMPS5MJ\SQLEXPRESS;Initial Catalog=DoAn_QuanLyKho;Persist Security Info=True;User ID=sa;Password=sa2013s;&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=LAPTOP-UHMPS5MJ\SQLEXPRESS;Initial Catalog=DoAn_QuanLyKho;Persist Security Info=True;User ID=sa;Password=sa2013s;</Value>
     </Setting>
   </Settings>
 </SettingsFile>

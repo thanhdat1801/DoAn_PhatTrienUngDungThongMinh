@@ -183,3 +183,11 @@ C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GU
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\BLL_DAL.dll.config
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.WaitForm1.resources
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\DevExpress.XtraBars.v20.1.dll
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\DevExpress.XtraBars.v20.1.xml
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmQuanLyKho.resources

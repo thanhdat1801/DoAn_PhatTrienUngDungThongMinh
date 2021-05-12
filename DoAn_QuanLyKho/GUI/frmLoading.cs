@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using BLL_DAL;
 
 namespace GUI
 {
@@ -47,7 +48,7 @@ namespace GUI
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //ConnectDatabase connect = new ConnectDatabase();
+            SQLHelper helper = new SQLHelper();
             progressBar1.Visible = true;
 
             this.progressBar1.Value = this.progressBar1.Value + 2;
@@ -69,53 +70,32 @@ namespace GUI
             }
             else if (this.progressBar1.Value == 80)
             {
-                //if (connect.Check_Company() == 0)
-                //{
-                //    labelStatus.Text = "First setup...";
-                //}
-                //else
-                //{
-                //    labelStatus.Text = "Done loading modules...";
-                //}
-                labelStatus.Text = "Done loading modules...";
+                if (helper.Check_Config() == 1 || helper.Check_Config() == 2)
+                {
+                    labelStatus.Text = "First setup...";
+                }
+                else
+                {
+                    labelStatus.Text = "Done loading modules...";
+                }
             }
             else if (this.progressBar1.Value == 100)
             {
-                //if (connect.Check_Config() == 1)
-                //{
-                //    frmCauHinh frm = new frmCauHinh();
-                //    frm.Show();
-                //    timer1.Enabled = false;
-                //    this.Hide();
-                //}
-                //else if (connect.Check_Config() == 2)
-                //{
-                //    MessageBox.Show("Chuỗi cấu hình không phù hợp!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                //}
-                //else
-                //{
-                //    timer.Stop();
-                //    if (connect.Check_Company() == 0)
-                //    {
-                //        frmSetupCompany frm = new frmSetupCompany();
-                //        frm.Show();
-                //        timer1.Enabled = false;
-                //        this.Hide();
-                //        timer.Stop();
-                //    }
-                //    else
-                //    {
-                //        frmLogin frm = new frmLogin();
-                //        frm.Show();
-                //        timer1.Enabled = false;
-                //        this.Hide();
-                //        timer.Stop();
-                //    }
-                //}
                 timer.Stop();
-                frmLogin frm = new frmLogin();
-                frm.Show();
-                this.Hide();
+                if (helper.Check_Config() == 1 || helper.Check_Config() == 2)
+                {
+                    frmConfig frm = new frmConfig();
+                    frm.Show();
+                    timer1.Enabled = false;
+                    this.Hide();
+                }
+                else
+                {
+                    frmLogin frm = new frmLogin();
+                    frm.Show();
+                    timer1.Enabled = false;
+                    this.Hide();
+                }  
             }
         }
     }

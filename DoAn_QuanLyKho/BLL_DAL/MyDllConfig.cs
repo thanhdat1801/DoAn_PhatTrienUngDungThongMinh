@@ -17,11 +17,8 @@ namespace BLL_DAL
 
         public MyDllConfig()
         {
-            _libCompat = Assembly.GetAssembly(typeof(
-              ConfigurationSettings)).GetName().Version.ToString().
-              CompareTo("1.0.5000.0") == 0;
-            _oldConfig = AppDomain.CurrentDomain.GetData(
-                   "APP_CONFIG_FILE").ToString();
+            _libCompat = Assembly.GetAssembly(typeof(ConfigurationSettings)).GetName().Version.ToString().CompareTo("1.0.5000.0") == 0;
+            _oldConfig = AppDomain.CurrentDomain.GetData("APP_CONFIG_FILE").ToString();
             Switch(_newConfig);
         }
         protected void Switch(string config)
@@ -29,13 +26,8 @@ namespace BLL_DAL
             if (_libCompat)
             {
                 AppDomain.CurrentDomain.SetData("APP_CONFIG_FILE", config);
-                FieldInfo fiInit = typeof(
-                    System.Configuration.ConfigurationSettings).GetField(
-                        "_configurationInitialized",
-                        BindingFlags.NonPublic | BindingFlags.Static);
-                FieldInfo fiSystem = typeof(
-                    System.Configuration.ConfigurationSettings).GetField(
-                        "_configSystem", BindingFlags.NonPublic | BindingFlags.Static);
+                FieldInfo fiInit = typeof(System.Configuration.ConfigurationSettings).GetField("_configurationInitialized",BindingFlags.NonPublic | BindingFlags.Static);
+                FieldInfo fiSystem = typeof(System.Configuration.ConfigurationSettings).GetField("_configSystem", BindingFlags.NonPublic | BindingFlags.Static);
                 if (fiInit != null && fiSystem != null)
                 {
                     fiInit.SetValue(null, false);
