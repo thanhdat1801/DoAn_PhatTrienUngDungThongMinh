@@ -16,15 +16,15 @@ namespace BLL_DAL
 
         public AppSetting()
         {
-            var path = @"C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\app.config";
-            string directory = Path.GetDirectoryName(path);
-            var pathRoot = Path.GetPathRoot(directory);
-            string file = Path.GetFileName(path);
-
-
+            string sCurrentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            //string path = @"..\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\app.config";
+            //string directory = Path.GetDirectoryName(path);
+            //var pathRoot = Path.GetPathRoot(directory);
+            //string file = Path.GetFileName(path);
+            string sFile = System.IO.Path.Combine(sCurrentDirectory, @"..\..\..\BLL_DAL\app.config");
             ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap
             {
-                ExeConfigFilename = Path.Combine(Path.GetFullPath(directory + "\\" + file))
+                ExeConfigFilename = Path.GetFullPath(sFile)
             };
 
             config = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);

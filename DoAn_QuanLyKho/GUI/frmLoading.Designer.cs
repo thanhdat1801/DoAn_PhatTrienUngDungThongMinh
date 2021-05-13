@@ -35,8 +35,8 @@ namespace GUI
             this.panel1 = new System.Windows.Forms.Panel();
             this.progressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.peLogo = new DevExpress.XtraEditors.PictureEdit();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.peLogo = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.peLogo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,6 +86,10 @@ namespace GUI
             this.bunifuElipse1.ElipseRadius = 25;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // peLogo
             // 
             this.peLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -102,10 +106,6 @@ namespace GUI
             this.peLogo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.peLogo.Size = new System.Drawing.Size(207, 52);
             this.peLogo.TabIndex = 8;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmLoading
             // 

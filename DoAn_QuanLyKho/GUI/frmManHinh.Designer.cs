@@ -29,13 +29,22 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.control_ManHinh1 = new BLL_DAL.Control_ManHinh();
             this.SuspendLayout();
+            // 
+            // control_ManHinh1
+            // 
+            this.control_ManHinh1.Location = new System.Drawing.Point(4, 1);
+            this.control_ManHinh1.Name = "control_ManHinh1";
+            this.control_ManHinh1.Size = new System.Drawing.Size(1036, 707);
+            this.control_ManHinh1.TabIndex = 0;
             // 
             // frmManHinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 678);
+            this.ClientSize = new System.Drawing.Size(1042, 717);
+            this.Controls.Add(this.control_ManHinh1);
             this.Name = "frmManHinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Màn hình sử dụng";
@@ -44,5 +53,7 @@ namespace GUI
         }
 
         #endregion
+
+        private BLL_DAL.Control_ManHinh control_ManHinh1;
     }
 }

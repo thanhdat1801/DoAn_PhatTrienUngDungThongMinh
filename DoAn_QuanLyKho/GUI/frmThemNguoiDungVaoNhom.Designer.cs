@@ -29,13 +29,22 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.control_ThemNguoiDungNhomNguoiDung1 = new BLL_DAL.Control_ThemNguoiDungNhomNguoiDung();
             this.SuspendLayout();
+            // 
+            // control_ThemNguoiDungNhomNguoiDung1
+            // 
+            this.control_ThemNguoiDungNhomNguoiDung1.Location = new System.Drawing.Point(13, 2);
+            this.control_ThemNguoiDungNhomNguoiDung1.Name = "control_ThemNguoiDungNhomNguoiDung1";
+            this.control_ThemNguoiDungNhomNguoiDung1.Size = new System.Drawing.Size(1311, 831);
+            this.control_ThemNguoiDungNhomNguoiDung1.TabIndex = 0;
             // 
             // frmThemNguoiDungVaoNhom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1295, 783);
+            this.ClientSize = new System.Drawing.Size(1338, 845);
+            this.Controls.Add(this.control_ThemNguoiDungNhomNguoiDung1);
             this.Name = "frmThemNguoiDungVaoNhom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm người dùng vào nhóm";
@@ -44,5 +53,7 @@ namespace GUI
         }
 
         #endregion
+
+        private BLL_DAL.Control_ThemNguoiDungNhomNguoiDung control_ThemNguoiDungNhomNguoiDung1;
     }
 }

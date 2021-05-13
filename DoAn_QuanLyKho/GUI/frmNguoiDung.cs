@@ -17,5 +17,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void frmNguoiDung_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

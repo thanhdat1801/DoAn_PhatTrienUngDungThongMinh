@@ -58,5 +58,16 @@ namespace GUI.Properties {
                 this["Password"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-UHMPS5MJ\\SQLEXPRESS;Initial Catalog=DoAn_QuanLyKho;Persist Sec" +
+            "urity Info=True;User ID=sa;Password=sa2012")]
+        public string DoAn_QuanLyKhoConnectionString {
+            get {
+                return ((string)(this["DoAn_QuanLyKhoConnectionString"]));
+            }
+        }
     }
 }

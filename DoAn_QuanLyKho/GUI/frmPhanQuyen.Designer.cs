@@ -29,13 +29,22 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.control_PhanQuyen1 = new BLL_DAL.Control_PhanQuyen();
             this.SuspendLayout();
+            // 
+            // control_PhanQuyen1
+            // 
+            this.control_PhanQuyen1.Location = new System.Drawing.Point(4, 2);
+            this.control_PhanQuyen1.Name = "control_PhanQuyen1";
+            this.control_PhanQuyen1.Size = new System.Drawing.Size(1232, 810);
+            this.control_PhanQuyen1.TabIndex = 0;
             // 
             // frmPhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1282, 778);
+            this.ClientSize = new System.Drawing.Size(1248, 811);
+            this.Controls.Add(this.control_PhanQuyen1);
             this.Name = "frmPhanQuyen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phân quyền";
@@ -44,5 +53,7 @@ namespace GUI
         }
 
         #endregion
+
+        private BLL_DAL.Control_PhanQuyen control_PhanQuyen1;
     }
 }

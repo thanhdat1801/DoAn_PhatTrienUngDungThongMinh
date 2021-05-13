@@ -29,20 +29,30 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.control_NguoiDung1 = new BLL_DAL.Control_NguoiDung();
             this.SuspendLayout();
+            // 
+            // control_NguoiDung1
+            // 
+            this.control_NguoiDung1.Location = new System.Drawing.Point(0, 0);
+            this.control_NguoiDung1.Name = "control_NguoiDung1";
+            this.control_NguoiDung1.Size = new System.Drawing.Size(1192, 700);
+            this.control_NguoiDung1.TabIndex = 0;
             // 
             // frmNguoiDung
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1168, 744);
+            this.ClientSize = new System.Drawing.Size(1598, 860);
+            this.Controls.Add(this.control_NguoiDung1);
             this.Name = "frmNguoiDung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý người dùng";
+            this.Load += new System.EventHandler(this.frmNguoiDung_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private BLL_DAL.Control_NguoiDung control_NguoiDung1;
     }
 }

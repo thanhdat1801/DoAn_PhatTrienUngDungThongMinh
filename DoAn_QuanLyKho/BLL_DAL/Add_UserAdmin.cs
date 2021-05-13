@@ -22,6 +22,7 @@ namespace BLL_DAL
             try
             {
                 QL_NguoiDung nguoiDung = new QL_NguoiDung();
+                nguoiDung.IDNhanVien = "ID001-UserAdmin";
                 nguoiDung.TenDangNhap = strTenDN;
                 nguoiDung.MatKhau = pass.Encrypt(strMatKhau);
                 nguoiDung.HoatDong = true;
@@ -31,6 +32,14 @@ namespace BLL_DAL
                 nguoiDung.Email = strEmail;
                 quanLyKho.QL_NguoiDungs.InsertOnSubmit(nguoiDung);
                 quanLyKho.SubmitChanges();
+
+                ////Thêm vào nhóm người dùng, bởi vì bảng này dùng DataSet không có kết bảng
+                //QL_NguoiDungNhomNguoiDung ql = new QL_NguoiDungNhomNguoiDung();
+                //ql.TenDangNhap = strTenDN;
+                //ql.MaNhomNguoiDung = "AD";
+                //ql.GhiChu = "";
+                //quanLyKho.QL_NguoiDungNhomNguoiDungs.InsertOnSubmit(ql);
+                //quanLyKho.SubmitChanges();
                 return true;
             }
             catch
