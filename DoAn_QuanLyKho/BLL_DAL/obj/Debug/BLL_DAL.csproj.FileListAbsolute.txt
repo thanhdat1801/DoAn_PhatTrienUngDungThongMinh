@@ -96,4 +96,4 @@ C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BL
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Control_PhanQuyen.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csprojAssemblyReference.cache
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Properties.Resources.resources
-C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Control_ThemNguoiDungNhomNguoiDung.resources
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Control_ThenNguoiDungVaoNhom.resources

@@ -91,7 +91,7 @@ namespace GUI
                 {
                     frm.ShowDialog(this);
                 }
-                frmQuanLyKho frmQuanLyKho = new frmQuanLyKho();
+                frmMain frmQuanLyKho = new frmMain();
                 frmQuanLyKho.Show();
                 this.Hide();
             }
@@ -117,6 +117,61 @@ namespace GUI
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void doubleBitmapControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelRight_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPass_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsername_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

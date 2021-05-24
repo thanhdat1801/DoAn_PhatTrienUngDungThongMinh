@@ -58,7 +58,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add_UserAdmin.cs" />
+    <Compile Include="Add_NhaCungCap.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="AppSetting.cs" />
     <Compile Include="Check_Login.cs" />
     <Compile Include="Company_Management.cs" />
@@ -86,11 +87,11 @@
     <Compile Include="Control_PhanQuyen.Designer.cs">
       <DependentUpon>Control_PhanQuyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_ThemNguoiDungNhomNguoiDung.cs">
+    <Compile Include="Control_ThenNguoiDungVaoNhom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_ThemNguoiDungNhomNguoiDung.Designer.cs">
-      <DependentUpon>Control_ThemNguoiDungNhomNguoiDung.cs</DependentUpon>
+    <Compile Include="Control_ThenNguoiDungVaoNhom.Designer.cs">
+      <DependentUpon>Control_ThenNguoiDungVaoNhom.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSetLogin.cs">
       <DependentUpon>DataSetLogin.xsd</DependentUpon>
@@ -164,8 +165,8 @@
     <EmbeddedResource Include="Control_PhanQuyen.resx">
       <DependentUpon>Control_PhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_ThemNguoiDungNhomNguoiDung.resx">
-      <DependentUpon>Control_ThemNguoiDungNhomNguoiDung.cs</DependentUpon>
+    <EmbeddedResource Include="Control_ThenNguoiDungVaoNhom.resx">
+      <DependentUpon>Control_ThenNguoiDungVaoNhom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -199,6 +200,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\find_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_32x321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,22 +17,23 @@ namespace BLL_DAL
         public AppSetting()
         {
             string sCurrentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            //string path = @"..\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\app.config";
-            //string directory = Path.GetDirectoryName(path);
-            //var pathRoot = Path.GetPathRoot(directory);
-            //string file = Path.GetFileName(path);
             string sFile = System.IO.Path.Combine(sCurrentDirectory, @"..\..\..\BLL_DAL\app.config");
             ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap
             {
-                ExeConfigFilename = Path.GetFullPath(sFile)
+                ExeConfigFilename = Path.Combine(sFile)
             };
-
+            
             config = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);
         }
 
+        private string strConn;
+
+        public string StrConn { get => strConn; set => strConn = value; }
+
         public string GetConnectionString(string key)
         {
-            return config.ConnectionStrings.ConnectionStrings[key].ConnectionString;
+            StrConn = config.ConnectionStrings.ConnectionStrings[key].ConnectionString;
+            return StrConn;
         }
 
         public void SaveConnectionString(string key, string value)

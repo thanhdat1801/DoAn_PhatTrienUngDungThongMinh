@@ -83,7 +83,7 @@ namespace GUI
                     frmSetupCompany frmSetup = new frmSetupCompany();
                     frmSetup.Show();
                     this.Hide();
-                }   
+                }
             }
             catch (Exception ex)
             {

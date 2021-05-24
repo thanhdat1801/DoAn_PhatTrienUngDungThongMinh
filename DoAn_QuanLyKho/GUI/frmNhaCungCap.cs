@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL_DAL;
 
 namespace GUI
 {
@@ -16,6 +17,17 @@ namespace GUI
         public frmNhaCungCap()
         {
             InitializeComponent();
+        }
+
+        private void grdNhaCungCap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmNhaCungCap_Load(object sender, EventArgs e)
+        {
+            Add_NhaCungCap ncc = new Add_NhaCungCap();
+            grdNhaCungCap.DataSource = ncc.loadDataNCC();
         }
     }
 }

@@ -65,6 +65,7 @@ namespace GUI
             this.doubleBitmapControl1.TabIndex = 0;
             this.doubleBitmapControl1.Text = "doubleBitmapControl1";
             this.doubleBitmapControl1.Visible = false;
+            this.doubleBitmapControl1.Click += new System.EventHandler(this.doubleBitmapControl1_Click);
             // 
             // panelRight
             // 
@@ -75,6 +76,7 @@ namespace GUI
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(884, 728);
             this.panelRight.TabIndex = 2;
+            this.panelRight.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRight_Paint);
             // 
             // panel1
             // 
@@ -122,6 +124,7 @@ namespace GUI
             this.label6.Size = new System.Drawing.Size(209, 23);
             this.label6.TabIndex = 4;
             this.label6.Text = "&Nhớ tài khoản của tôi";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // chkShowPass
             // 
@@ -185,6 +188,7 @@ namespace GUI
             this.txtPass.TabIndex = 2;
             this.txtPass.Text = "Password";
             this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPass.OnValueChanged += new System.EventHandler(this.txtPass_OnValueChanged);
             // 
             // label4
             // 
@@ -197,6 +201,7 @@ namespace GUI
             this.label4.Size = new System.Drawing.Size(97, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "&Mật khẩu:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtUsername
             // 
@@ -217,6 +222,7 @@ namespace GUI
             this.txtUsername.TabIndex = 1;
             this.txtUsername.Text = "Username";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUsername.OnValueChanged += new System.EventHandler(this.txtUsername_OnValueChanged);
             // 
             // label3
             // 
@@ -229,6 +235,7 @@ namespace GUI
             this.label3.Size = new System.Drawing.Size(160, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "&Tên đăng nhập:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblClose
             // 
@@ -254,6 +261,7 @@ namespace GUI
             this.label2.Size = new System.Drawing.Size(316, 37);
             this.label2.TabIndex = 0;
             this.label2.Text = "Thông tin đăng nhập";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panelLeft
             // 
@@ -267,6 +275,7 @@ namespace GUI
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(428, 728);
             this.panelLeft.TabIndex = 2;
+            this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLeft_Paint);
             // 
             // label9
             // 
@@ -279,6 +288,7 @@ namespace GUI
             this.label9.Size = new System.Drawing.Size(260, 30);
             this.label9.TabIndex = 2;
             this.label9.Text = "Beta Version 1.0 2021";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label1
             // 
@@ -303,6 +313,7 @@ namespace GUI
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // bunifuElipse1
             // 

@@ -16,7 +16,7 @@ namespace GUI
         public frmLoading()
         {
             InitializeComponent();
-            this.labelCopyright.Text = "Copyright © 1998-" + DateTime.Now.Year.ToString();
+            this.labelCopyright.Text = "Copyright © 05 - " + DateTime.Now.Year.ToString();
         }
 
         #region Overrides
@@ -97,6 +97,11 @@ namespace GUI
                     this.Hide();
                 }  
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

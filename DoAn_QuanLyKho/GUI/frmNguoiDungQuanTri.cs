@@ -37,7 +37,7 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Add_UserAdmin add = new Add_UserAdmin();
+            User add = new User();
             AppSetting setting = new AppSetting();
             txtMail txt = new txtMail();
             bool cus = txt.isEmail(txtMail.Text);
