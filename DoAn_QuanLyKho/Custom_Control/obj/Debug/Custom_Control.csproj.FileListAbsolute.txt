@@ -44,7 +44,7 @@ C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Cu
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Custom_Control\obj\Debug\Custom_Control.csproj.CopyComplete
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Custom_Control\obj\Debug\Custom_Control.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Custom_Control\obj\Debug\Custom_Control.pdb
-C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Custom_Control\obj\Debug\Custom_Control.csprojAssemblyReference.cache
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Custom_Control\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Custom_Control\obj\Debug\Custom_Control.txtMail.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Custom_Control\obj\Debug\Custom_Control.csproj.GenerateResource.cache
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\Custom_Control\obj\Debug\Custom_Control.csproj.AssemblyReference.cache

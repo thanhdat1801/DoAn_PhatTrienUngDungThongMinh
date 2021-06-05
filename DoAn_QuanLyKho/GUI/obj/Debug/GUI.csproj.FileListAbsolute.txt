@@ -115,7 +115,6 @@ C:\Users\fcpha\OneDrive\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\GUI\obj\Debug\GUI.
 C:\Users\fcpha\OneDrive\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmNhomNguoiDung.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmPhanQuyen.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmThemNguoiDungVaoNhom.resources
-C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmConfig.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmLoading.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmLogin.resources
@@ -136,7 +135,6 @@ C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GU
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\GUI.exe
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\GUI.pdb
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\BLL_DAL.dll
-C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\Custom_Control.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\DevExpress.BonusSkins.v20.1.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
@@ -370,3 +368,5 @@ C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GU
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\es\DevExpress.XtraScheduler.v20.1.Core.resources.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\ja\DevExpress.XtraScheduler.v20.1.Core.resources.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\bin\Debug\ru\DevExpress.XtraScheduler.v20.1.Core.resources.dll
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.TestMapControl.resources

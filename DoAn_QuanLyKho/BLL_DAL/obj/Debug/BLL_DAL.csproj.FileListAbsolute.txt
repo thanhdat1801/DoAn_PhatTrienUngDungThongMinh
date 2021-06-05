@@ -88,12 +88,11 @@ C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BL
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.dll.licenses
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.CopyComplete
-C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Control_NguoiDung.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.GenerateResource.cache
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Control_NhomNguoiDung.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Control_ManHinh.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Control_PhanQuyen.resources
-C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csprojAssemblyReference.cache
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Properties.Resources.resources
 C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Control_ThenNguoiDungVaoNhom.resources
+C:\Users\fcpha\OneDrive\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.AssemblyReference.cache
