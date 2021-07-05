@@ -1,4 +1,4 @@
-﻿using DevExpress.XtraBars;
+﻿using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,115 +8,107 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BLL_DAL;
 
 namespace GUI
 {
-    public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class frmMain : DevExpress.XtraEditors.XtraForm
     {
         public frmMain()
         {
             InitializeComponent();
         }
 
-        public void openSubForm(Form frm)
+        public void openSubForm(Form form)
         {
-            //frm.MdiParent = this;
-            pcMain.Controls.Clear();
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Dock = DockStyle.Fill;
-            frm.TopLevel = false;
-            pcMain.Controls.Add(frm);
-            frm.Show();
+            mainPanel.Controls.Clear();
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(form);
+            mainPanel.Tag = form;
+            mainPanel.BringToFront();
+            form.Show();
         }
 
-        private void barEditItem1_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void frmQuanLyKho_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            frmLogin frm = new frmLogin();
-            frm.Show();
-            this.Hide();
-        }
-
-        private void backstageViewButtonItem4_ItemClick_1(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
-        {
-            DialogResult rs;
-            rs = MessageBox.Show("Bạn có muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
-            if (rs == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-
-        private void barButtonItem1_ItemClick_1(object sender, ItemClickEventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void nbiUser_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            frmNguoiDung frm = new frmNguoiDung();
+
+        }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void circularPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTrangChu_1_Click(object sender, EventArgs e)
+        {
+            lblHeader.Text = "Trang chủ";
+            indicator.Top = ((Control)sender).Top;
+            frmTrangChu frm = new frmTrangChu();
             openSubForm(frm);
         }
 
-        private void nbiNhomNguoiDung_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void btnLienHe_2_Click(object sender, EventArgs e)
         {
-            frmNhomNguoiDung frm = new frmNhomNguoiDung();
-            openSubForm(frm);
-        }
-
-        private void nbiManHinh_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            frmManHinh frm = new frmManHinh();
-            openSubForm(frm);
-        }
-
-        private void nbiThemNguoiDungVaoNhom_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            frmThemNguoiDungVaoNhom frm = new frmThemNguoiDungVaoNhom();
-            openSubForm(frm);
-        }
-
-        private void nbiPhanQuyen_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            frmPhanQuyen frm = new frmPhanQuyen();
-            openSubForm(frm);
-        }
-
-        private void navBarItem2_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            AppSetting setting = new AppSetting();
-            using (WaitForm1 frm = new WaitForm1(setting.SaveData))
-            {
-                frm.ShowDialog(this);
-            }
-            frmDashboard frm1 = new frmDashboard();
-            frm1.Show();
-        }
-
-        private void pcMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void navBarItem3_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
+            lblHeader.Text = "Nhà cung cấp";
+            indicator.Top = ((Control)sender).Top;
             frmNhaCungCap frm = new frmNhaCungCap();
             openSubForm(frm);
         }
 
-        private void barButtonItem15_ItemClick(object sender, ItemClickEventArgs e)
+        private void btnKho_3_Click(object sender, EventArgs e)
         {
+            lblHeader.Text = "Quản lý kho";
+            indicator.Top = ((Control)sender).Top;
+            frmQuanLyKho frm = new frmQuanLyKho();
+            openSubForm(frm);
+        }
 
+        private void btnSanPham_4_Click(object sender, EventArgs e)
+        {
+            lblHeader.Text = "Sản phẩm";
+            indicator.Top = ((Control)sender).Top;
+        }
+
+        private void btnBaoCao_5_Click(object sender, EventArgs e)
+        {
+            lblHeader.Text = "Báo cáo";
+            indicator.Top = ((Control)sender).Top;
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lblHeader.Text = "Trang chủ";
+            frmTrangChu frm = new frmTrangChu();
+            openSubForm(frm);
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            lblHeader.Text = "Nhân viên";
+            indicator.Top = ((Control)sender).Top;
+            frmNhanVien frm = new frmNhanVien();
+            openSubForm(frm);
         }
     }
 }

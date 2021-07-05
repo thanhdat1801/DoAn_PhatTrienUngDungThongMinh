@@ -12,7 +12,7 @@ namespace BLL_DAL.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -58,16 +58,15 @@ namespace BLL_DAL.Properties {
                 this["Password"] = value;
             }
         }
-
-        AppSetting setting = new AppSetting();
+        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-UHMPS5MJ\\SQLEXPRESS;Initial Catalog=DoAn_QuanLyKho;Persist Sec" +
-            "urity Info=True;User ID=sa;Password=sa2012;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PC-DAI\\SQLEXPRESS;Initial Catalog=DoAn_QuanLyKho;Persist Security Inf" +
+            "o=True;User ID=sa;Password=sa2012;")]
         public string DoAn_QuanLyKhoConnectionString {
             get {
-                return (setting.GetConnectionString("BLL_DAL.Properties.Settings.DoAn_QuanLyKhoConnectionString"));
+                return ((string)(this["DoAn_QuanLyKhoConnectionString"]));
             }
         }
     }

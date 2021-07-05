@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frmNhomNguoiDung : DevExpress.XtraEditors.XtraForm
+    public partial class frmTrangChu : DevExpress.XtraEditors.XtraForm
     {
-        public frmNhomNguoiDung()
+        public frmTrangChu()
         {
             InitializeComponent();
         }

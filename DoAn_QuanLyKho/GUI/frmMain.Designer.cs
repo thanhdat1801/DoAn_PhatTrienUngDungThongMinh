@@ -29,858 +29,519 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.backstageViewButtonItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.backstageViewButtonItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.backstageViewButtonItem3 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.backstageViewButtonItem4 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.skinPaletteRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.skinDropDownButtonItem2 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.skinPaletteRibbonGalleryBarItem2 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.skinDropDownButtonItem3 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.skinDropDownButtonItem4 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.skinPaletteRibbonGalleryBarItem3 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.skinDropDownButtonItem5 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.skinPaletteRibbonGalleryBarItem4 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.skinDropDownButtonItem6 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.skinPaletteRibbonGalleryBarItem5 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
-            this.skinDropDownButtonItem7 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.skinPaletteRibbonGalleryBarItem6 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
-            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.bbiNewContact = new DevExpress.XtraBars.BarButtonItem();
-            this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
-            this.backstageViewManager1 = new DevExpress.XtraBars.Ribbon.BackstageViewManager();
-            this.nbiUser = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiManHinh = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiThemNguoiDungVaoNhom = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiPhanQuyen = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiNhomNguoiDung = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbgModules = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarItem4 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarItem5 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarItem6 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
-            this.pcMain = new DevExpress.XtraEditors.PanelControl();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
-            this.backstageViewControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcMain)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.lblTen = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblChucVu = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.headerPanel = new System.Windows.Forms.Panel();
+            this.lblHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnNhanVien = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnBaoCao_5 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnSanPham_4 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnKho_3 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnLienHe_2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnTrangChu_1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.indicator = new System.Windows.Forms.PictureBox();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.picNhanVien = new Custom_Control.CircularPictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.headerPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // ribbon
-            // 
-            this.ribbon.ApplicationButtonDropDownControl = this.backstageViewControl1;
-            this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbon.ExpandCollapseItem,
-            this.ribbon.SearchEditItem,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4,
-            this.barButtonItem5,
-            this.barButtonItem6,
-            this.skinDropDownButtonItem1,
-            this.skinPaletteRibbonGalleryBarItem1,
-            this.skinDropDownButtonItem2,
-            this.skinPaletteRibbonGalleryBarItem2,
-            this.skinDropDownButtonItem3,
-            this.barButtonItem8,
-            this.barButtonItem9,
-            this.barButtonItem10,
-            this.skinDropDownButtonItem4,
-            this.skinPaletteRibbonGalleryBarItem3,
-            this.barButtonItem11,
-            this.barButtonItem12,
-            this.barButtonItem13,
-            this.skinDropDownButtonItem5,
-            this.skinPaletteRibbonGalleryBarItem4,
-            this.skinDropDownButtonItem6,
-            this.skinPaletteRibbonGalleryBarItem5,
-            this.barButtonItem14,
-            this.barButtonItem15,
-            this.barButtonItem16,
-            this.barButtonItem17,
-            this.barButtonItem18,
-            this.barButtonItem19,
-            this.skinDropDownButtonItem7,
-            this.skinPaletteRibbonGalleryBarItem6});
-            this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 42;
-            this.ribbon.Name = "ribbon";
-            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1,
-            this.ribbonPage2,
-            this.ribbonPage5,
-            this.ribbonPage6,
-            this.ribbonPage7});
-            this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemHypertextLabel1,
-            this.repositoryItemTextEdit1});
-            this.ribbon.Size = new System.Drawing.Size(1325, 193);
-            this.ribbon.StatusBar = this.ribbonStatusBar;
-            // 
-            // backstageViewControl1
-            // 
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
-            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
-            this.backstageViewControl1.Items.Add(this.backstageViewButtonItem1);
-            this.backstageViewControl1.Items.Add(this.backstageViewButtonItem2);
-            this.backstageViewControl1.Items.Add(this.backstageViewButtonItem3);
-            this.backstageViewControl1.Items.Add(this.backstageViewButtonItem4);
-            this.backstageViewControl1.Location = new System.Drawing.Point(1173, 209);
-            this.backstageViewControl1.Name = "backstageViewControl1";
-            this.backstageViewControl1.OwnerControl = this.ribbon;
-            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem1;
-            this.backstageViewControl1.SelectedTabIndex = 0;
-            this.backstageViewControl1.Size = new System.Drawing.Size(140, 476);
-            this.backstageViewControl1.TabIndex = 2;
-            this.backstageViewControl1.VisibleInDesignTime = true;
-            // 
-            // backstageViewClientControl1
-            // 
-            this.backstageViewClientControl1.Location = new System.Drawing.Point(138, 78);
-            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(1, 397);
-            this.backstageViewClientControl1.TabIndex = 1;
-            // 
-            // backstageViewTabItem1
-            // 
-            this.backstageViewTabItem1.Caption = "Save";
-            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
-            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
-            this.backstageViewTabItem1.Selected = true;
-            // 
-            // backstageViewButtonItem1
-            // 
-            this.backstageViewButtonItem1.Caption = "Info";
-            this.backstageViewButtonItem1.Name = "backstageViewButtonItem1";
-            // 
-            // backstageViewButtonItem2
-            // 
-            this.backstageViewButtonItem2.Caption = "Print";
-            this.backstageViewButtonItem2.Name = "backstageViewButtonItem2";
-            // 
-            // backstageViewButtonItem3
-            // 
-            this.backstageViewButtonItem3.Caption = "Export";
-            this.backstageViewButtonItem3.Name = "backstageViewButtonItem3";
-            // 
-            // backstageViewButtonItem4
-            // 
-            this.backstageViewButtonItem4.Caption = "Exit";
-            this.backstageViewButtonItem4.Name = "backstageViewButtonItem4";
-            this.backstageViewButtonItem4.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewButtonItem4_ItemClick_1);
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Thêm";
-            this.barButtonItem1.Id = 8;
-            this.barButtonItem1.ImageOptions.Image = global::GUI.Properties.Resources.newcontact_16x16;
-            this.barButtonItem1.ImageOptions.LargeImage = global::GUI.Properties.Resources.newcontact_32x32;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_1);
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Sửa";
-            this.barButtonItem2.Id = 9;
-            this.barButtonItem2.ImageOptions.Image = global::GUI.Properties.Resources.editcontact_16x16;
-            this.barButtonItem2.ImageOptions.LargeImage = global::GUI.Properties.Resources.editcontact_32x32;
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "Xóa";
-            this.barButtonItem3.Id = 10;
-            this.barButtonItem3.ImageOptions.SvgImage = global::GUI.Properties.Resources.del;
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Thêm";
-            this.barButtonItem4.Id = 11;
-            this.barButtonItem4.ImageOptions.Image = global::GUI.Properties.Resources.newcontact_16x161;
-            this.barButtonItem4.ImageOptions.LargeImage = global::GUI.Properties.Resources.newcontact_32x321;
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "Sửa";
-            this.barButtonItem5.Id = 12;
-            this.barButtonItem5.ImageOptions.Image = global::GUI.Properties.Resources.editcontact_16x161;
-            this.barButtonItem5.ImageOptions.LargeImage = global::GUI.Properties.Resources.editcontact_32x321;
-            this.barButtonItem5.Name = "barButtonItem5";
-            // 
-            // barButtonItem6
-            // 
-            this.barButtonItem6.Caption = "Xóa";
-            this.barButtonItem6.Id = 13;
-            this.barButtonItem6.ImageOptions.Image = global::GUI.Properties.Resources.delete_16x161;
-            this.barButtonItem6.ImageOptions.LargeImage = global::GUI.Properties.Resources.delete_32x321;
-            this.barButtonItem6.Name = "barButtonItem6";
-            // 
-            // skinDropDownButtonItem1
-            // 
-            this.skinDropDownButtonItem1.Id = 16;
-            this.skinDropDownButtonItem1.Name = "skinDropDownButtonItem1";
-            // 
-            // skinPaletteRibbonGalleryBarItem1
-            // 
-            this.skinPaletteRibbonGalleryBarItem1.Caption = "skinPaletteRibbonGalleryBarItem1";
-            this.skinPaletteRibbonGalleryBarItem1.Id = 17;
-            this.skinPaletteRibbonGalleryBarItem1.Name = "skinPaletteRibbonGalleryBarItem1";
-            // 
-            // skinDropDownButtonItem2
-            // 
-            this.skinDropDownButtonItem2.Id = 18;
-            this.skinDropDownButtonItem2.Name = "skinDropDownButtonItem2";
-            // 
-            // skinPaletteRibbonGalleryBarItem2
-            // 
-            this.skinPaletteRibbonGalleryBarItem2.Caption = "skinPaletteRibbonGalleryBarItem2";
-            this.skinPaletteRibbonGalleryBarItem2.Id = 19;
-            this.skinPaletteRibbonGalleryBarItem2.Name = "skinPaletteRibbonGalleryBarItem2";
-            // 
-            // skinDropDownButtonItem3
-            // 
-            this.skinDropDownButtonItem3.Id = 21;
-            this.skinDropDownButtonItem3.Name = "skinDropDownButtonItem3";
-            // 
-            // barButtonItem8
-            // 
-            this.barButtonItem8.Caption = "Thêm";
-            this.barButtonItem8.Id = 22;
-            this.barButtonItem8.ImageOptions.Image = global::GUI.Properties.Resources.newcontact_16x162;
-            this.barButtonItem8.ImageOptions.LargeImage = global::GUI.Properties.Resources.newcontact_32x322;
-            this.barButtonItem8.Name = "barButtonItem8";
-            // 
-            // barButtonItem9
-            // 
-            this.barButtonItem9.Caption = "Sửa";
-            this.barButtonItem9.Id = 23;
-            this.barButtonItem9.ImageOptions.Image = global::GUI.Properties.Resources.editcontact_16x162;
-            this.barButtonItem9.ImageOptions.LargeImage = global::GUI.Properties.Resources.editcontact_32x322;
-            this.barButtonItem9.Name = "barButtonItem9";
-            // 
-            // barButtonItem10
-            // 
-            this.barButtonItem10.Caption = "Xóa";
-            this.barButtonItem10.Id = 24;
-            this.barButtonItem10.ImageOptions.Image = global::GUI.Properties.Resources.cancel_16x161;
-            this.barButtonItem10.ImageOptions.LargeImage = global::GUI.Properties.Resources.cancel_32x321;
-            this.barButtonItem10.Name = "barButtonItem10";
-            // 
-            // skinDropDownButtonItem4
-            // 
-            this.skinDropDownButtonItem4.Id = 25;
-            this.skinDropDownButtonItem4.Name = "skinDropDownButtonItem4";
-            // 
-            // skinPaletteRibbonGalleryBarItem3
-            // 
-            this.skinPaletteRibbonGalleryBarItem3.Caption = "skinPaletteRibbonGalleryBarItem3";
-            this.skinPaletteRibbonGalleryBarItem3.Id = 26;
-            this.skinPaletteRibbonGalleryBarItem3.Name = "skinPaletteRibbonGalleryBarItem3";
-            // 
-            // barButtonItem11
-            // 
-            this.barButtonItem11.Caption = "Thêm";
-            this.barButtonItem11.Id = 27;
-            this.barButtonItem11.ImageOptions.Image = global::GUI.Properties.Resources.newcontact_16x163;
-            this.barButtonItem11.ImageOptions.LargeImage = global::GUI.Properties.Resources.newcontact_32x323;
-            this.barButtonItem11.Name = "barButtonItem11";
-            // 
-            // barButtonItem12
-            // 
-            this.barButtonItem12.Caption = "Sửa";
-            this.barButtonItem12.Id = 28;
-            this.barButtonItem12.ImageOptions.Image = global::GUI.Properties.Resources.editcontact_16x163;
-            this.barButtonItem12.ImageOptions.LargeImage = global::GUI.Properties.Resources.editcontact_32x323;
-            this.barButtonItem12.Name = "barButtonItem12";
-            // 
-            // barButtonItem13
-            // 
-            this.barButtonItem13.Caption = "Xóa";
-            this.barButtonItem13.Id = 29;
-            this.barButtonItem13.ImageOptions.Image = global::GUI.Properties.Resources.cancel_16x162;
-            this.barButtonItem13.ImageOptions.LargeImage = global::GUI.Properties.Resources.cancel_32x322;
-            this.barButtonItem13.Name = "barButtonItem13";
-            // 
-            // skinDropDownButtonItem5
-            // 
-            this.skinDropDownButtonItem5.Id = 30;
-            this.skinDropDownButtonItem5.Name = "skinDropDownButtonItem5";
-            // 
-            // skinPaletteRibbonGalleryBarItem4
-            // 
-            this.skinPaletteRibbonGalleryBarItem4.Caption = "skinPaletteRibbonGalleryBarItem4";
-            this.skinPaletteRibbonGalleryBarItem4.Id = 31;
-            this.skinPaletteRibbonGalleryBarItem4.Name = "skinPaletteRibbonGalleryBarItem4";
-            // 
-            // skinDropDownButtonItem6
-            // 
-            this.skinDropDownButtonItem6.Id = 32;
-            this.skinDropDownButtonItem6.Name = "skinDropDownButtonItem6";
-            // 
-            // skinPaletteRibbonGalleryBarItem5
-            // 
-            this.skinPaletteRibbonGalleryBarItem5.Caption = "skinPaletteRibbonGalleryBarItem5";
-            this.skinPaletteRibbonGalleryBarItem5.Id = 33;
-            this.skinPaletteRibbonGalleryBarItem5.Name = "skinPaletteRibbonGalleryBarItem5";
-            // 
-            // barButtonItem14
-            // 
-            this.barButtonItem14.Caption = "Thêm";
-            this.barButtonItem14.Id = 34;
-            this.barButtonItem14.ImageOptions.Image = global::GUI.Properties.Resources.newcontact_16x164;
-            this.barButtonItem14.ImageOptions.LargeImage = global::GUI.Properties.Resources.newcontact_32x324;
-            this.barButtonItem14.Name = "barButtonItem14";
-            // 
-            // barButtonItem15
-            // 
-            this.barButtonItem15.Caption = "Sửa";
-            this.barButtonItem15.Id = 35;
-            this.barButtonItem15.ImageOptions.Image = global::GUI.Properties.Resources.editcontact_16x164;
-            this.barButtonItem15.ImageOptions.LargeImage = global::GUI.Properties.Resources.editcontact_32x324;
-            this.barButtonItem15.Name = "barButtonItem15";
-            this.barButtonItem15.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem15_ItemClick);
-            // 
-            // barButtonItem16
-            // 
-            this.barButtonItem16.Caption = "Xóa";
-            this.barButtonItem16.Id = 36;
-            this.barButtonItem16.ImageOptions.Image = global::GUI.Properties.Resources.cancel_16x163;
-            this.barButtonItem16.ImageOptions.LargeImage = global::GUI.Properties.Resources.cancel_32x323;
-            this.barButtonItem16.Name = "barButtonItem16";
-            // 
-            // barButtonItem17
-            // 
-            this.barButtonItem17.Caption = "Thêm";
-            this.barButtonItem17.Id = 37;
-            this.barButtonItem17.ImageOptions.Image = global::GUI.Properties.Resources.newcontact_16x165;
-            this.barButtonItem17.ImageOptions.LargeImage = global::GUI.Properties.Resources.newcontact_32x325;
-            this.barButtonItem17.Name = "barButtonItem17";
-            // 
-            // barButtonItem18
-            // 
-            this.barButtonItem18.Caption = "Sửa";
-            this.barButtonItem18.Id = 38;
-            this.barButtonItem18.ImageOptions.Image = global::GUI.Properties.Resources.editcontact_16x166;
-            this.barButtonItem18.ImageOptions.LargeImage = global::GUI.Properties.Resources.editcontact_32x326;
-            this.barButtonItem18.Name = "barButtonItem18";
-            // 
-            // barButtonItem19
-            // 
-            this.barButtonItem19.Caption = "Xóa";
-            this.barButtonItem19.Id = 39;
-            this.barButtonItem19.ImageOptions.Image = global::GUI.Properties.Resources.cancel_16x164;
-            this.barButtonItem19.ImageOptions.LargeImage = global::GUI.Properties.Resources.cancel_32x324;
-            this.barButtonItem19.Name = "barButtonItem19";
-            // 
-            // skinDropDownButtonItem7
-            // 
-            this.skinDropDownButtonItem7.Id = 40;
-            this.skinDropDownButtonItem7.Name = "skinDropDownButtonItem7";
-            // 
-            // skinPaletteRibbonGalleryBarItem6
-            // 
-            this.skinPaletteRibbonGalleryBarItem6.Caption = "skinPaletteRibbonGalleryBarItem6";
-            this.skinPaletteRibbonGalleryBarItem6.Id = 41;
-            this.skinPaletteRibbonGalleryBarItem6.Name = "skinPaletteRibbonGalleryBarItem6";
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup2,
-            this.ribbonPageGroup4});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "USER";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1, true);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Thêm / Xóa / Sửa";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.skinDropDownButtonItem1);
-            this.ribbonPageGroup4.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem1);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Cá nhân hóa";
-            // 
-            // ribbonPage2
-            // 
-            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup5});
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Nhà cung cấp";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem10);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "Thêm / Xóa / Sửa";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.skinDropDownButtonItem4);
-            this.ribbonPageGroup5.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem3);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "Cá nhân hóa";
-            // 
-            // ribbonPage5
-            // 
-            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup8,
-            this.ribbonPageGroup9});
-            this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "Kho hàng";
-            // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem11);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem12);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "Thêm / Xóa / Sửa";
-            // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.skinDropDownButtonItem5);
-            this.ribbonPageGroup9.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem4);
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "Cá nhân hóa";
-            // 
-            // ribbonPage6
-            // 
-            this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup10,
-            this.ribbonPageGroup11});
-            this.ribbonPage6.Name = "ribbonPage6";
-            this.ribbonPage6.Text = "Nhóm hàng";
-            // 
-            // ribbonPageGroup10
-            // 
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem14);
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem15);
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem16);
-            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "Thêm / Xóa / Sửa";
-            // 
-            // ribbonPageGroup11
-            // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.skinDropDownButtonItem6);
-            this.ribbonPageGroup11.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem5);
-            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "Cá nhân hóa";
-            // 
-            // ribbonPage7
-            // 
-            this.ribbonPage7.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup12,
-            this.ribbonPageGroup13});
-            this.ribbonPage7.Name = "ribbonPage7";
-            this.ribbonPage7.Text = "Hàng hóa";
-            // 
-            // ribbonPageGroup12
-            // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem17);
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem18);
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem19);
-            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            this.ribbonPageGroup12.Text = "Thêm / Xóa / Sửa";
-            // 
-            // ribbonPageGroup13
-            // 
-            this.ribbonPageGroup13.ItemLinks.Add(this.skinDropDownButtonItem7);
-            this.ribbonPageGroup13.ItemLinks.Add(this.skinPaletteRibbonGalleryBarItem6);
-            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
-            this.ribbonPageGroup13.Text = "Cá nhân hóa";
-            // 
-            // repositoryItemHypertextLabel1
-            // 
-            this.repositoryItemHypertextLabel1.Name = "repositoryItemHypertextLabel1";
-            // 
-            // repositoryItemTextEdit1
-            // 
-            this.repositoryItemTextEdit1.AutoHeight = false;
-            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
-            // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 803);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1325, 30);
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ImageOptions.Image = global::GUI.Properties.Resources.user_32x321;
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Quản lý nhân viên";
-            // 
-            // navBarGroup1
-            // 
-            this.navBarGroup1.Caption = "Chức năng";
-            this.navBarGroup1.Expanded = true;
-            this.navBarGroup1.ImageOptions.LargeImage = global::GUI.Properties.Resources.about_32x32;
-            this.navBarGroup1.ImageOptions.SmallImage = global::GUI.Properties.Resources.about_16x16;
-            this.navBarGroup1.Name = "navBarGroup1";
-            // 
-            // bbiNewContact
-            // 
-            this.bbiNewContact.Caption = "New Contact";
-            this.bbiNewContact.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bbiNewContact.Id = 97;
-            this.bbiNewContact.Name = "bbiNewContact";
-            // 
-            // navBarItem1
-            // 
-            this.navBarItem1.Caption = "Phân quyền";
-            this.navBarItem1.ImageOptions.LargeImage = global::GUI.Properties.Resources.publicfix_32x321;
-            this.navBarItem1.ImageOptions.SmallImage = global::GUI.Properties.Resources.publicfix_16x161;
-            this.navBarItem1.Name = "navBarItem1";
-            // 
-            // backstageViewManager1
-            // 
-            this.backstageViewManager1.BackstageView = this.backstageViewControl1;
-            // 
-            // nbiUser
-            // 
-            this.nbiUser.Caption = "Người dùng";
-            this.nbiUser.ImageOptions.LargeImage = global::GUI.Properties.Resources.customer_32x322;
-            this.nbiUser.ImageOptions.SmallImage = global::GUI.Properties.Resources.customer_16x162;
-            this.nbiUser.Name = "nbiUser";
-            this.nbiUser.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiUser_LinkClicked);
-            // 
-            // nbiManHinh
-            // 
-            this.nbiManHinh.Caption = "Màn hình sử dụng";
-            this.nbiManHinh.ImageOptions.LargeImage = global::GUI.Properties.Resources.employees_32x32;
-            this.nbiManHinh.ImageOptions.SmallImage = global::GUI.Properties.Resources.employees_16x16;
-            this.nbiManHinh.Name = "nbiManHinh";
-            this.nbiManHinh.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiManHinh_LinkClicked);
-            // 
-            // nbiThemNguoiDungVaoNhom
-            // 
-            this.nbiThemNguoiDungVaoNhom.Caption = "Thêm người dùng vào nhóm";
-            this.nbiThemNguoiDungVaoNhom.ImageOptions.LargeImage = global::GUI.Properties.Resources.assignto_32x322;
-            this.nbiThemNguoiDungVaoNhom.ImageOptions.SmallImage = global::GUI.Properties.Resources.assignto_16x162;
-            this.nbiThemNguoiDungVaoNhom.Name = "nbiThemNguoiDungVaoNhom";
-            this.nbiThemNguoiDungVaoNhom.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThemNguoiDungVaoNhom_LinkClicked);
-            // 
-            // nbiPhanQuyen
-            // 
-            this.nbiPhanQuyen.Caption = "Phân quyền";
-            this.nbiPhanQuyen.ImageOptions.LargeImage = global::GUI.Properties.Resources.publicfix_32x321;
-            this.nbiPhanQuyen.ImageOptions.SmallImage = global::GUI.Properties.Resources.publicfix_16x161;
-            this.nbiPhanQuyen.Name = "nbiPhanQuyen";
-            this.nbiPhanQuyen.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiPhanQuyen_LinkClicked);
-            // 
-            // nbiNhomNguoiDung
-            // 
-            this.nbiNhomNguoiDung.Caption = "Nhóm người dùng";
-            this.nbiNhomNguoiDung.ImageOptions.LargeImage = global::GUI.Properties.Resources.usergroup_32x321;
-            this.nbiNhomNguoiDung.ImageOptions.SmallImage = global::GUI.Properties.Resources.usergroup_16x161;
-            this.nbiNhomNguoiDung.Name = "nbiNhomNguoiDung";
-            this.nbiNhomNguoiDung.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiNhomNguoiDung_LinkClicked);
-            // 
-            // navBarItem2
-            // 
-            this.navBarItem2.Caption = "Biểu đồ";
-            this.navBarItem2.ImageOptions.LargeImage = global::GUI.Properties.Resources.piestylepie_32x32;
-            this.navBarItem2.ImageOptions.SmallImage = global::GUI.Properties.Resources.piestylepie_16x16;
-            this.navBarItem2.Name = "navBarItem2";
-            this.navBarItem2.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem2_LinkClicked);
-            // 
-            // nbgModules
-            // 
-            this.nbgModules.Caption = "Chức năng";
-            this.nbgModules.Expanded = true;
-            this.nbgModules.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgModules.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
-            this.nbgModules.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiUser),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiNhomNguoiDung),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiManHinh),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiThemNguoiDungVaoNhom),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiPhanQuyen),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem4),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem5),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem6)});
-            this.nbgModules.Name = "nbgModules";
-            this.nbgModules.NavigationPaneVisible = false;
-            this.nbgModules.SelectedLinkIndex = 9;
-            this.nbgModules.TopVisibleLinkIndex = 4;
-            // 
-            // navBarItem3
-            // 
-            this.navBarItem3.Caption = "Quản lý nhà cung cấp";
-            this.navBarItem3.ImageOptions.SvgImage = global::GUI.Properties.Resources.bo_organization;
-            this.navBarItem3.Name = "navBarItem3";
-            this.navBarItem3.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem3_LinkClicked);
-            // 
-            // navBarItem4
-            // 
-            this.navBarItem4.Caption = "Quản lý kho hàng";
-            this.navBarItem4.ImageOptions.SvgImage = global::GUI.Properties.Resources.bo_sale_item1;
-            this.navBarItem4.Name = "navBarItem4";
-            // 
-            // navBarItem5
-            // 
-            this.navBarItem5.Caption = "Quản lý nhóm hàng";
-            this.navBarItem5.ImageOptions.SvgImage = global::GUI.Properties.Resources.bo_note;
-            this.navBarItem5.Name = "navBarItem5";
-            // 
-            // navBarItem6
-            // 
-            this.navBarItem6.Caption = "Quản lý hàng hóa";
-            this.navBarItem6.ImageOptions.SvgImage = global::GUI.Properties.Resources.bo_sale;
-            this.navBarItem6.Name = "navBarItem6";
-            // 
-            // navBarControl1
-            // 
-            this.navBarControl1.ActiveGroup = this.nbgModules;
-            this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
-            this.nbgModules});
-            this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
-            this.nbiUser,
-            this.nbiManHinh,
-            this.nbiThemNguoiDungVaoNhom,
-            this.nbiPhanQuyen,
-            this.nbiNhomNguoiDung,
-            this.navBarItem2,
-            this.navBarItem3,
-            this.navBarItem4,
-            this.navBarItem5,
-            this.navBarItem6});
-            this.navBarControl1.LinkSelectionMode = DevExpress.XtraNavBar.LinkSelectionModeType.OneInControl;
-            this.navBarControl1.Location = new System.Drawing.Point(0, 193);
-            this.navBarControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.NavigationPaneGroupClientHeight = 320;
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 180;
-            this.navBarControl1.OptionsNavPane.ShowOverflowButton = false;
-            this.navBarControl1.OptionsNavPane.ShowOverflowPanel = false;
-            this.navBarControl1.OptionsNavPane.ShowSplitter = false;
-            this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl1.Size = new System.Drawing.Size(180, 610);
-            this.navBarControl1.StoreDefaultPaintStyleName = true;
-            this.navBarControl1.TabIndex = 8;
-            this.navBarControl1.Text = "navBarControl1";
-            // 
-            // pcMain
-            // 
-            this.pcMain.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pcMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcMain.Location = new System.Drawing.Point(180, 193);
-            this.pcMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pcMain.Name = "pcMain";
-            this.pcMain.Size = new System.Drawing.Size(1145, 610);
-            this.pcMain.TabIndex = 11;
-            this.pcMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pcMain_Paint);
-            // 
-            // ribbonPage3
-            // 
-            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup6});
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "ribbonPage3";
-            // 
-            // ribbonPageGroup6
-            // 
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "ribbonPageGroup6";
-            // 
-            // ribbonPage4
-            // 
-            this.ribbonPage4.Name = "ribbonPage4";
-            this.ribbonPage4.Text = "ribbonPage4";
-            // 
-            // ribbonPageGroup7
-            // 
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            // 
-            // barButtonItem7
-            // 
-            this.barButtonItem7.Caption = "Đăng xuất";
-            this.barButtonItem7.Id = 20;
-            this.barButtonItem7.ImageOptions.Image = global::GUI.Properties.Resources.close_16x16;
-            this.barButtonItem7.ImageOptions.LargeImage = global::GUI.Properties.Resources.close_32x32;
-            this.barButtonItem7.Name = "barButtonItem7";
+            // lblTen
+            // 
+            this.lblTen.AutoSize = true;
+            this.lblTen.BackColor = System.Drawing.Color.Transparent;
+            this.lblTen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.ForeColor = System.Drawing.Color.White;
+            this.lblTen.Location = new System.Drawing.Point(39, 124);
+            this.lblTen.Name = "lblTen";
+            this.lblTen.Size = new System.Drawing.Size(207, 23);
+            this.lblTen.TabIndex = 1;
+            this.lblTen.Text = "Xin chào, Bill Gates!";
+            this.lblTen.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            // 
+            // lblChucVu
+            // 
+            this.lblChucVu.AutoSize = true;
+            this.lblChucVu.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChucVu.ForeColor = System.Drawing.Color.White;
+            this.lblChucVu.Location = new System.Drawing.Point(105, 157);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(63, 21);
+            this.lblChucVu.TabIndex = 2;
+            this.lblChucVu.Text = "Admin";
+            this.lblChucVu.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(92)))), ((int)(((byte)(125)))));
+            this.panel1.Controls.Add(this.btnNhanVien);
+            this.panel1.Controls.Add(this.bunifuFlatButton6);
+            this.panel1.Controls.Add(this.btnBaoCao_5);
+            this.panel1.Controls.Add(this.btnSanPham_4);
+            this.panel1.Controls.Add(this.btnKho_3);
+            this.panel1.Controls.Add(this.btnLienHe_2);
+            this.panel1.Controls.Add(this.btnTrangChu_1);
+            this.panel1.Controls.Add(this.indicator);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(285, 1040);
+            this.panel1.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.bunifuThinButton21);
+            this.panel2.Controls.Add(this.picNhanVien);
+            this.panel2.Controls.Add(this.lblTen);
+            this.panel2.Controls.Add(this.lblChucVu);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 64);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(285, 238);
+            this.panel2.TabIndex = 9;
+            // 
+            // headerPanel
+            // 
+            this.headerPanel.BackColor = System.Drawing.Color.Transparent;
+            this.headerPanel.Controls.Add(this.pictureBox4);
+            this.headerPanel.Controls.Add(this.pictureBox3);
+            this.headerPanel.Controls.Add(this.pictureBox1);
+            this.headerPanel.Controls.Add(this.lblHeader);
+            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerPanel.Location = new System.Drawing.Point(285, 0);
+            this.headerPanel.Name = "headerPanel";
+            this.headerPanel.Size = new System.Drawing.Size(1633, 64);
+            this.headerPanel.TabIndex = 4;
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.Black;
+            this.lblHeader.Location = new System.Drawing.Point(33, 16);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(108, 32);
+            this.lblHeader.TabIndex = 0;
+            this.lblHeader.Text = "DauBuoi";
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(285, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(1633, 1040);
+            this.mainPanel.TabIndex = 3;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1557, 18);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1507, 18);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1457, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.Activecolor = System.Drawing.Color.Transparent;
+            this.btnNhanVien.BackColor = System.Drawing.Color.Transparent;
+            this.btnNhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNhanVien.BorderRadius = 0;
+            this.btnNhanVien.ButtonText = "    Nhân viên";
+            this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNhanVien.DisabledColor = System.Drawing.Color.Gray;
+            this.btnNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnNhanVien.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnNhanVien.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Iconimage")));
+            this.btnNhanVien.Iconimage_right = null;
+            this.btnNhanVien.Iconimage_right_Selected = null;
+            this.btnNhanVien.Iconimage_Selected = null;
+            this.btnNhanVien.IconMarginLeft = 0;
+            this.btnNhanVien.IconMarginRight = 0;
+            this.btnNhanVien.IconRightVisible = true;
+            this.btnNhanVien.IconRightZoom = 0D;
+            this.btnNhanVien.IconVisible = true;
+            this.btnNhanVien.IconZoom = 60D;
+            this.btnNhanVien.IsTab = false;
+            this.btnNhanVien.Location = new System.Drawing.Point(13, 369);
+            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnNhanVien.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnNhanVien.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnNhanVien.selected = false;
+            this.btnNhanVien.Size = new System.Drawing.Size(272, 59);
+            this.btnNhanVien.TabIndex = 20;
+            this.btnNhanVien.Text = "    Nhân viên";
+            this.btnNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhanVien.Textcolor = System.Drawing.Color.White;
+            this.btnNhanVien.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+            // 
+            // bunifuFlatButton6
+            // 
+            this.bunifuFlatButton6.Activecolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton6.BorderRadius = 0;
+            this.bunifuFlatButton6.ButtonText = "    Đăng xuất";
+            this.bunifuFlatButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton6.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bunifuFlatButton6.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton6.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton6.Iconimage")));
+            this.bunifuFlatButton6.Iconimage_right = null;
+            this.bunifuFlatButton6.Iconimage_right_Selected = null;
+            this.bunifuFlatButton6.Iconimage_Selected = null;
+            this.bunifuFlatButton6.IconMarginLeft = 0;
+            this.bunifuFlatButton6.IconMarginRight = 0;
+            this.bunifuFlatButton6.IconRightVisible = true;
+            this.bunifuFlatButton6.IconRightZoom = 0D;
+            this.bunifuFlatButton6.IconVisible = true;
+            this.bunifuFlatButton6.IconZoom = 60D;
+            this.bunifuFlatButton6.IsTab = false;
+            this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 981);
+            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton6.Name = "bunifuFlatButton6";
+            this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton6.selected = false;
+            this.bunifuFlatButton6.Size = new System.Drawing.Size(285, 59);
+            this.bunifuFlatButton6.TabIndex = 19;
+            this.bunifuFlatButton6.Text = "    Đăng xuất";
+            this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton6.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton6.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnBaoCao_5
+            // 
+            this.btnBaoCao_5.Activecolor = System.Drawing.Color.Transparent;
+            this.btnBaoCao_5.BackColor = System.Drawing.Color.Transparent;
+            this.btnBaoCao_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBaoCao_5.BorderRadius = 0;
+            this.btnBaoCao_5.ButtonText = "    Báo cáo";
+            this.btnBaoCao_5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBaoCao_5.DisabledColor = System.Drawing.Color.Gray;
+            this.btnBaoCao_5.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnBaoCao_5.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBaoCao_5.Iconimage")));
+            this.btnBaoCao_5.Iconimage_right = null;
+            this.btnBaoCao_5.Iconimage_right_Selected = null;
+            this.btnBaoCao_5.Iconimage_Selected = null;
+            this.btnBaoCao_5.IconMarginLeft = 0;
+            this.btnBaoCao_5.IconMarginRight = 0;
+            this.btnBaoCao_5.IconRightVisible = true;
+            this.btnBaoCao_5.IconRightZoom = 0D;
+            this.btnBaoCao_5.IconVisible = true;
+            this.btnBaoCao_5.IconZoom = 60D;
+            this.btnBaoCao_5.IsTab = false;
+            this.btnBaoCao_5.Location = new System.Drawing.Point(13, 631);
+            this.btnBaoCao_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBaoCao_5.Name = "btnBaoCao_5";
+            this.btnBaoCao_5.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnBaoCao_5.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnBaoCao_5.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnBaoCao_5.selected = false;
+            this.btnBaoCao_5.Size = new System.Drawing.Size(268, 59);
+            this.btnBaoCao_5.TabIndex = 18;
+            this.btnBaoCao_5.Text = "    Báo cáo";
+            this.btnBaoCao_5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCao_5.Textcolor = System.Drawing.Color.White;
+            this.btnBaoCao_5.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao_5.Click += new System.EventHandler(this.btnBaoCao_5_Click);
+            // 
+            // btnSanPham_4
+            // 
+            this.btnSanPham_4.Activecolor = System.Drawing.Color.Transparent;
+            this.btnSanPham_4.BackColor = System.Drawing.Color.Transparent;
+            this.btnSanPham_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSanPham_4.BorderRadius = 0;
+            this.btnSanPham_4.ButtonText = "   Sản phẩm";
+            this.btnSanPham_4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSanPham_4.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSanPham_4.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham_4.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSanPham_4.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSanPham_4.Iconimage")));
+            this.btnSanPham_4.Iconimage_right = null;
+            this.btnSanPham_4.Iconimage_right_Selected = null;
+            this.btnSanPham_4.Iconimage_Selected = null;
+            this.btnSanPham_4.IconMarginLeft = 0;
+            this.btnSanPham_4.IconMarginRight = 0;
+            this.btnSanPham_4.IconRightVisible = true;
+            this.btnSanPham_4.IconRightZoom = 0D;
+            this.btnSanPham_4.IconVisible = true;
+            this.btnSanPham_4.IconZoom = 60D;
+            this.btnSanPham_4.IsTab = false;
+            this.btnSanPham_4.Location = new System.Drawing.Point(12, 566);
+            this.btnSanPham_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSanPham_4.Name = "btnSanPham_4";
+            this.btnSanPham_4.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnSanPham_4.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnSanPham_4.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnSanPham_4.selected = false;
+            this.btnSanPham_4.Size = new System.Drawing.Size(269, 59);
+            this.btnSanPham_4.TabIndex = 16;
+            this.btnSanPham_4.Text = "   Sản phẩm";
+            this.btnSanPham_4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSanPham_4.Textcolor = System.Drawing.Color.White;
+            this.btnSanPham_4.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham_4.Click += new System.EventHandler(this.btnSanPham_4_Click);
+            // 
+            // btnKho_3
+            // 
+            this.btnKho_3.Activecolor = System.Drawing.Color.Transparent;
+            this.btnKho_3.BackColor = System.Drawing.Color.Transparent;
+            this.btnKho_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKho_3.BorderRadius = 0;
+            this.btnKho_3.ButtonText = "    Kho";
+            this.btnKho_3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKho_3.DisabledColor = System.Drawing.Color.Gray;
+            this.btnKho_3.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnKho_3.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnKho_3.Iconimage")));
+            this.btnKho_3.Iconimage_right = null;
+            this.btnKho_3.Iconimage_right_Selected = null;
+            this.btnKho_3.Iconimage_Selected = null;
+            this.btnKho_3.IconMarginLeft = 0;
+            this.btnKho_3.IconMarginRight = 0;
+            this.btnKho_3.IconRightVisible = true;
+            this.btnKho_3.IconRightZoom = 0D;
+            this.btnKho_3.IconVisible = true;
+            this.btnKho_3.IconZoom = 60D;
+            this.btnKho_3.IsTab = false;
+            this.btnKho_3.Location = new System.Drawing.Point(13, 501);
+            this.btnKho_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKho_3.Name = "btnKho_3";
+            this.btnKho_3.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnKho_3.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnKho_3.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnKho_3.selected = false;
+            this.btnKho_3.Size = new System.Drawing.Size(270, 59);
+            this.btnKho_3.TabIndex = 14;
+            this.btnKho_3.Text = "    Kho";
+            this.btnKho_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKho_3.Textcolor = System.Drawing.Color.White;
+            this.btnKho_3.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKho_3.Click += new System.EventHandler(this.btnKho_3_Click);
+            // 
+            // btnLienHe_2
+            // 
+            this.btnLienHe_2.Activecolor = System.Drawing.Color.Transparent;
+            this.btnLienHe_2.BackColor = System.Drawing.Color.Transparent;
+            this.btnLienHe_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLienHe_2.BorderRadius = 0;
+            this.btnLienHe_2.ButtonText = "    Nhà cung cấp";
+            this.btnLienHe_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLienHe_2.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLienHe_2.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLienHe_2.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLienHe_2.Iconimage")));
+            this.btnLienHe_2.Iconimage_right = null;
+            this.btnLienHe_2.Iconimage_right_Selected = null;
+            this.btnLienHe_2.Iconimage_Selected = null;
+            this.btnLienHe_2.IconMarginLeft = 0;
+            this.btnLienHe_2.IconMarginRight = 0;
+            this.btnLienHe_2.IconRightVisible = true;
+            this.btnLienHe_2.IconRightZoom = 0D;
+            this.btnLienHe_2.IconVisible = true;
+            this.btnLienHe_2.IconZoom = 60D;
+            this.btnLienHe_2.IsTab = false;
+            this.btnLienHe_2.Location = new System.Drawing.Point(13, 436);
+            this.btnLienHe_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLienHe_2.Name = "btnLienHe_2";
+            this.btnLienHe_2.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnLienHe_2.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnLienHe_2.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnLienHe_2.selected = false;
+            this.btnLienHe_2.Size = new System.Drawing.Size(272, 59);
+            this.btnLienHe_2.TabIndex = 12;
+            this.btnLienHe_2.Text = "    Nhà cung cấp";
+            this.btnLienHe_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLienHe_2.Textcolor = System.Drawing.Color.White;
+            this.btnLienHe_2.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLienHe_2.Click += new System.EventHandler(this.btnLienHe_2_Click);
+            // 
+            // btnTrangChu_1
+            // 
+            this.btnTrangChu_1.Activecolor = System.Drawing.Color.Transparent;
+            this.btnTrangChu_1.BackColor = System.Drawing.Color.Transparent;
+            this.btnTrangChu_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTrangChu_1.BorderRadius = 0;
+            this.btnTrangChu_1.ButtonText = "    Trang chủ";
+            this.btnTrangChu_1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrangChu_1.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTrangChu_1.ForeColor = System.Drawing.Color.White;
+            this.btnTrangChu_1.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTrangChu_1.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTrangChu_1.Iconimage")));
+            this.btnTrangChu_1.Iconimage_right = null;
+            this.btnTrangChu_1.Iconimage_right_Selected = null;
+            this.btnTrangChu_1.Iconimage_Selected = null;
+            this.btnTrangChu_1.IconMarginLeft = 0;
+            this.btnTrangChu_1.IconMarginRight = 0;
+            this.btnTrangChu_1.IconRightVisible = true;
+            this.btnTrangChu_1.IconRightZoom = 0D;
+            this.btnTrangChu_1.IconVisible = true;
+            this.btnTrangChu_1.IconZoom = 60D;
+            this.btnTrangChu_1.IsTab = false;
+            this.btnTrangChu_1.Location = new System.Drawing.Point(13, 302);
+            this.btnTrangChu_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTrangChu_1.Name = "btnTrangChu_1";
+            this.btnTrangChu_1.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnTrangChu_1.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnTrangChu_1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnTrangChu_1.selected = false;
+            this.btnTrangChu_1.Size = new System.Drawing.Size(272, 59);
+            this.btnTrangChu_1.TabIndex = 10;
+            this.btnTrangChu_1.Text = "    Trang chủ";
+            this.btnTrangChu_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangChu_1.Textcolor = System.Drawing.Color.White;
+            this.btnTrangChu_1.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChu_1.Click += new System.EventHandler(this.btnTrangChu_1_Click);
+            // 
+            // indicator
+            // 
+            this.indicator.BackColor = System.Drawing.Color.Orchid;
+            this.indicator.Location = new System.Drawing.Point(0, 302);
+            this.indicator.Name = "indicator";
+            this.indicator.Size = new System.Drawing.Size(10, 59);
+            this.indicator.TabIndex = 7;
+            this.indicator.TabStop = false;
+            this.indicator.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(92)))), ((int)(((byte)(125)))));
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Cập nhật ";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(92)))), ((int)(((byte)(125)))));
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(43, 183);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(194, 41);
+            this.bunifuThinButton21.TabIndex = 4;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picNhanVien
+            // 
+            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
+            this.picNhanVien.Location = new System.Drawing.Point(87, 6);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
+            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNhanVien.TabIndex = 0;
+            this.picNhanVien.TabStop = false;
+            this.picNhanVien.Click += new System.EventHandler(this.circularPictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox2.Image = global::GUI.Properties.Resources.wms_logo;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(285, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1325, 833);
-            this.Controls.Add(this.backstageViewControl1);
-            this.Controls.Add(this.pcMain);
-            this.Controls.Add(this.navBarControl1);
-            this.Controls.Add(this.ribbonStatusBar);
-            this.Controls.Add(this.ribbon);
-            this.IconOptions.SvgImage = global::GUI.Properties.Resources.bo_sale_item;
+            this.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Appearance.Options.UseBackColor = true;
+            this.ClientSize = new System.Drawing.Size(1918, 1040);
+            this.Controls.Add(this.headerPanel);
+            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Name = "frmMain";
-            this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.StatusBar = this.ribbonStatusBar;
-            this.Text = "Quản lý kho";
+            this.Text = "Màn hình làm việc";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQuanLyKho_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
-            this.backstageViewControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcMain)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.headerPanel.ResumeLayout(false);
+            this.headerPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
-        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel repositoryItemHypertextLabel1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem backstageViewButtonItem1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem backstageViewButtonItem2;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem backstageViewButtonItem3;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem backstageViewButtonItem4;
-        private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem bbiNewContact;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem1;
-        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem1;
-        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem2;
-        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-        private DevExpress.XtraBars.Ribbon.BackstageViewManager backstageViewManager1;
-        private DevExpress.XtraNavBar.NavBarItem nbiUser;
-        private DevExpress.XtraNavBar.NavBarItem nbiManHinh;
-        private DevExpress.XtraNavBar.NavBarItem nbiThemNguoiDungVaoNhom;
-        private DevExpress.XtraNavBar.NavBarItem nbiPhanQuyen;
-        private DevExpress.XtraNavBar.NavBarItem nbiNhomNguoiDung;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem2;
-        private DevExpress.XtraNavBar.NavBarGroup nbgModules;
-        private DevExpress.XtraNavBar.NavBarControl navBarControl1;
-        private DevExpress.XtraEditors.PanelControl pcMain;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem3;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem4;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem5;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem6;
-        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem4;
-        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
-        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem5;
-        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem4;
-        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem6;
-        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage6;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem17;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem18;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem19;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
-        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem7;
-        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem6;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private System.Windows.Forms.PictureBox indicator;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblChucVu;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblTen;
+        private Custom_Control.CircularPictureBox picNhanVien;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.Framework.UI.BunifuFlatButton btnTrangChu_1;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
+        private Bunifu.Framework.UI.BunifuFlatButton btnBaoCao_5;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSanPham_4;
+        private Bunifu.Framework.UI.BunifuFlatButton btnKho_3;
+        private Bunifu.Framework.UI.BunifuFlatButton btnLienHe_2;
+        private System.Windows.Forms.Panel headerPanel;
+        private System.Windows.Forms.Panel mainPanel;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblHeader;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuFlatButton btnNhanVien;
     }
 }
