@@ -91,7 +91,6 @@
     </None>
     <None Include="QuanLyKho.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>QuanLyKho.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

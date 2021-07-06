@@ -108,6 +108,9 @@ namespace GUI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            txtUsername.Text = "Username";
+            txtPass.Text = "Password";
+            txtPass.isPassword = true;
             ReadSettings();
         }
 

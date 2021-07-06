@@ -19,8 +19,8 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmMain());
-            //Application.Run(new frmLoading());
-            Application.Run(new TestMapControl());
+            Application.Run(new frmLoading());
+            //Application.Run(new TestMapControl());
         }
     }
 }

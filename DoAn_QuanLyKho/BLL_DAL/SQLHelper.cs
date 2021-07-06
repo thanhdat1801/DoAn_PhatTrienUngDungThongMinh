@@ -18,7 +18,7 @@ namespace BLL_DAL
         }
 
         public SQLHelper()
-        { 
+        {
         }
 
         public bool IsConnection
@@ -34,8 +34,8 @@ namespace BLL_DAL
         //Kiểm tra chuỗi cấu hình data LinQ
         public int Check_Config()
         {
-            conn = new SqlConnection(Properties.Settings.Default.DoAn_QuanLyKhoConnectionString);
-            if (Properties.Settings.Default.DoAn_QuanLyKhoConnectionString == string.Empty)
+            conn = new SqlConnection(Properties.Settings.Default.QL_KHOHANGConnectionString);
+            if (Properties.Settings.Default.QL_KHOHANGConnectionString == string.Empty)
                 return 1;// Chuỗi cấu hình không tồn tại
             try
             {

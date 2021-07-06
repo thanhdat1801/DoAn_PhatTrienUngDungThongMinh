@@ -74,14 +74,16 @@ namespace GUI
                     AppSetting setting = new AppSetting();
                     //MyDllConfig config = new MyDllConfig();
                     //setting.GetConnectionString("DoAn_QuanLyKhoConnectionString");
-                    setting.SaveConnectionString("BLL_DAL.Properties.Settings.DoAn_QuanLyKhoConnectionString", connectionString);
+                    setting.SaveConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString", connectionString);
                     using(WaitForm1 frm = new WaitForm1(setting.SaveData))
                     {
                         frm.ShowDialog(this);
                     }
                     MessageBox.Show("Your connection string has been successfully save.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    frmSetupCompany frmSetup = new frmSetupCompany();
-                    frmSetup.Show();
+                    //frmSetupCompany frmSetup = new frmSetupCompany();
+                    //frmSetup.Show();
+                    frmLogin frmlogin = new frmLogin();
+                    frmlogin.Show();
                     this.Hide();
                 }
             }

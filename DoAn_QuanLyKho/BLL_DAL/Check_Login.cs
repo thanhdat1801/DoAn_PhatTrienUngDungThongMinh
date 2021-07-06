@@ -9,7 +9,7 @@ namespace BLL_DAL
     public class Check_Login
     {
         public static AppSetting setting = new AppSetting();
-        QuanLyKhoDataContext quanLyKho = new QuanLyKhoDataContext(setting.GetConnectionString("BLL_DAL.Properties.Settings.DoAn_QuanLyKhoConnectionString"));
+        QuanLyKhoDataContext quanLyKho = new QuanLyKhoDataContext(setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString"));
         DefendPassword pass = new DefendPassword();
 
         public Check_Login()
@@ -21,7 +21,7 @@ namespace BLL_DAL
         {
             try
             {
-                var loginEnable = from p in quanLyKho.QL_NguoiDungs where p.TenDangNhap == strUser && p.MatKhau == pass.Encrypt(strPass) && p.HoatDong == true select p;
+                var loginEnable = from p in quanLyKho.NGUOIDUNGs where p.ID_DN == strUser && p.MATKHAU == strPass && p.TINHTRANG == true select p;
                 if (loginEnable.Any())
                 {
                     return true;

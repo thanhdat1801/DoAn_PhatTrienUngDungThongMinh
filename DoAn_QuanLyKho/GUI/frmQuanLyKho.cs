@@ -23,5 +23,10 @@ namespace GUI
             TestMapControl testMapControl = new TestMapControl();
             testMapControl.Show();
         }
+
+        private void frmQuanLyKho_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

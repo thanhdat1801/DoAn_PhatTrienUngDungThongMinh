@@ -41,7 +41,7 @@ namespace GUI
         private void frmLoading_Shown(object sender, EventArgs e)
         {
             timer = new Timer();
-            timer.Interval = 300; //Set time interval 300 miliseconds
+            timer.Interval = 30; //Set time interval 300 miliseconds
             timer.Start(); //Start the timer
             timer.Tick += timer1_Tick;
         }
@@ -100,6 +100,11 @@ namespace GUI
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void peLogo_EditValueChanged(object sender, EventArgs e)
         {
 
         }

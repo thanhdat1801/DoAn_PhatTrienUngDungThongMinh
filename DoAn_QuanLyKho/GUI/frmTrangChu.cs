@@ -17,5 +17,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void frmTrangChu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
