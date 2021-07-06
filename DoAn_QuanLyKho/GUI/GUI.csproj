@@ -95,11 +95,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCapNhatTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatTT.Designer.cs">
+      <DependentUpon>frmCapNhatTT.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConfig.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmConfig.Designer.cs">
       <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhMucMH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhMucMH.Designer.cs">
+      <DependentUpon>frmDanhMucMH.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLoading.cs">
       <SubType>Form</SubType>
@@ -131,11 +143,23 @@
     <Compile Include="frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhanQuyen.Designer.cs">
+      <DependentUpon>frmPhanQuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLyKho.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQuanLyKho.Designer.cs">
       <DependentUpon>frmQuanLyKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyNhomNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyNhomNguoiDung.Designer.cs">
+      <DependentUpon>frmQuanLyNhomNguoiDung.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSetupCompany.cs">
       <SubType>Form</SubType>
@@ -148,6 +172,18 @@
     </Compile>
     <Compile Include="frmNhaCungCap.Designer.cs">
       <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowPass.Designer.cs">
+      <DependentUpon>frmShowPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNguoiDungVaoNhom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNguoiDungVaoNhom.Designer.cs">
+      <DependentUpon>frmThemNguoiDungVaoNhom.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTrangChu.cs">
       <SubType>Form</SubType>
@@ -169,8 +205,14 @@
     <Compile Include="WaitForm1.Designer.cs">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmCapNhatTT.resx">
+      <DependentUpon>frmCapNhatTT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConfig.resx">
       <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhMucMH.resx">
+      <DependentUpon>frmDanhMucMH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
@@ -187,14 +229,26 @@
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPhanQuyen.resx">
+      <DependentUpon>frmPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyKho.resx">
       <DependentUpon>frmQuanLyKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyNhomNguoiDung.resx">
+      <DependentUpon>frmQuanLyNhomNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSetupCompany.resx">
       <DependentUpon>frmSetupCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhaCungCap.resx">
       <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowPass.resx">
+      <DependentUpon>frmShowPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNguoiDungVaoNhom.resx">
+      <DependentUpon>frmThemNguoiDungVaoNhom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrangChu.resx">
       <DependentUpon>frmTrangChu.cs</DependentUpon>

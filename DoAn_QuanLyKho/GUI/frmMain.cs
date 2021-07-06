@@ -8,13 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL_DAL;
 
 namespace GUI
 {
     public partial class frmMain : DevExpress.XtraEditors.XtraForm
     {
-        public frmMain()
+        Check_Login login = new Check_Login();
+        NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
+        string MaNhanVien;
+        public frmMain(string manv)
         {
+            MaNhanVien = manv;
             InitializeComponent();
         }
 
@@ -101,6 +106,21 @@ namespace GUI
             lblHeader.Text = "Trang chủ";
             frmTrangChu frm = new frmTrangChu();
             openSubForm(frm);
+            NGUOIDUNG nd = new NGUOIDUNG();
+            try
+            {
+                nd = nv.get_Info(MaNhanVien);
+                lblTen.Text = "Xin chào " + nd.TEN.ToString() +"!";
+                Image img = Image.FromFile(Application.StartupPath + "\\img\\" + nd.HINH);
+                picNhanVien.Image = img;
+            }
+            catch
+            {
+                nd = nv.get_Info(MaNhanVien);
+                lblTen.Text = "Xin chào " + nd.TEN.ToString() + "!";
+                Image img = Image.FromFile(Application.StartupPath + "\\img\\user_32x322.png");
+                picNhanVien.Image = img;
+            }
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
@@ -109,6 +129,19 @@ namespace GUI
             indicator.Top = ((Control)sender).Top;
             frmNhanVien frm = new frmNhanVien();
             openSubForm(frm);
+        }
+
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            frmLogin frm = new frmLogin();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            frmCapNhatTT frm = new frmCapNhatTT(MaNhanVien);
+            frm.Show();
         }
     }
 }

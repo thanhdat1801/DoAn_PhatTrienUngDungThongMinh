@@ -1126,3 +1126,9 @@ C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.exe
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.pdb
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmShowPass.resources
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmCapNhatTT.resources
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmDanhMucMH.resources
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmPhanQuyen.resources
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmQuanLyNhomNguoiDung.resources
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmThemNguoiDungVaoNhom.resources

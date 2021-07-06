@@ -59,6 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Add_NhaCungCap.cs" />
+    <Compile Include="DanhMucMH_BLL_DAL.cs" />
+    <Compile Include="NhanVienBLL_DAL.cs" />
+    <Compile Include="QL_NhonmNguoiDung.cs" />
     <Compile Include="User.cs" />
     <Compile Include="AppSetting.cs" />
     <Compile Include="Check_Login.cs" />

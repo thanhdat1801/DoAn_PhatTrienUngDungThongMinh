@@ -30,9 +30,9 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhaCungCap));
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.grvNhaCungCap = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -75,8 +75,8 @@ namespace GUI
             // 
             this.grvNhaCungCap.AllowUserToAddRows = false;
             this.grvNhaCungCap.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.grvNhaCungCap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.grvNhaCungCap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.grvNhaCungCap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -85,26 +85,26 @@ namespace GUI
             this.grvNhaCungCap.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grvNhaCungCap.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grvNhaCungCap.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grvNhaCungCap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grvNhaCungCap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.grvNhaCungCap.ColumnHeadersHeight = 50;
             this.grvNhaCungCap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grvNhaCungCap.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grvNhaCungCap.DefaultCellStyle = dataGridViewCellStyle9;
             this.grvNhaCungCap.DoubleBuffered = true;
             this.grvNhaCungCap.EnableHeadersVisualStyles = false;
             this.grvNhaCungCap.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
@@ -120,7 +120,7 @@ namespace GUI
             this.grvNhaCungCap.RowTemplate.Height = 30;
             this.grvNhaCungCap.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.grvNhaCungCap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grvNhaCungCap.Size = new System.Drawing.Size(492, 641);
+            this.grvNhaCungCap.Size = new System.Drawing.Size(366, 557);
             this.grvNhaCungCap.TabIndex = 9;
             // 
             // Column1
@@ -161,7 +161,7 @@ namespace GUI
             this.bunifuCards3.Name = "bunifuCards3";
             this.bunifuCards3.RightSahddow = true;
             this.bunifuCards3.ShadowDepth = 20;
-            this.bunifuCards3.Size = new System.Drawing.Size(797, 170);
+            this.bunifuCards3.Size = new System.Drawing.Size(724, 170);
             this.bunifuCards3.TabIndex = 15;
             // 
             // bunifuElipse1
@@ -193,6 +193,7 @@ namespace GUI
             this.txtSearch.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtSearch.LineThickness = 3;
             this.txtSearch.Location = new System.Drawing.Point(20, 20);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(492, 37);
             this.txtSearch.TabIndex = 10;
@@ -216,12 +217,12 @@ namespace GUI
             this.bunifuCards2.Controls.Add(this.labelControl1);
             this.bunifuCards2.Controls.Add(this.picNhanVien);
             this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(552, 76);
+            this.bunifuCards2.Location = new System.Drawing.Point(626, 76);
             this.bunifuCards2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuCards2.Name = "bunifuCards2";
             this.bunifuCards2.RightSahddow = true;
             this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(828, 657);
+            this.bunifuCards2.Size = new System.Drawing.Size(762, 640);
             this.bunifuCards2.TabIndex = 12;
             // 
             // bunifuThinButton21
@@ -243,7 +244,7 @@ namespace GUI
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bunifuThinButton21.Location = new System.Drawing.Point(143, 193);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(278, 48);
             this.bunifuThinButton21.TabIndex = 16;
@@ -345,7 +346,7 @@ namespace GUI
             this.btnSuaNCC.IdleForecolor = System.Drawing.Color.White;
             this.btnSuaNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSuaNCC.Location = new System.Drawing.Point(1283, 8);
-            this.btnSuaNCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSuaNCC.Margin = new System.Windows.Forms.Padding(4);
             this.btnSuaNCC.Name = "btnSuaNCC";
             this.btnSuaNCC.Size = new System.Drawing.Size(95, 48);
             this.btnSuaNCC.TabIndex = 15;
@@ -384,7 +385,7 @@ namespace GUI
             this.btnThemNCC.IdleForecolor = System.Drawing.Color.White;
             this.btnThemNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThemNCC.Location = new System.Drawing.Point(1091, 8);
-            this.btnThemNCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemNCC.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemNCC.Name = "btnThemNCC";
             this.btnThemNCC.Size = new System.Drawing.Size(95, 48);
             this.btnThemNCC.TabIndex = 13;
@@ -409,7 +410,7 @@ namespace GUI
             this.btnXoaNCC.IdleForecolor = System.Drawing.Color.White;
             this.btnXoaNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnXoaNCC.Location = new System.Drawing.Point(1187, 8);
-            this.btnXoaNCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoaNCC.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaNCC.Name = "btnXoaNCC";
             this.btnXoaNCC.Size = new System.Drawing.Size(95, 48);
             this.btnXoaNCC.TabIndex = 14;
@@ -421,7 +422,7 @@ namespace GUI
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 741);
+            this.ClientSize = new System.Drawing.Size(1438, 820);
             this.Controls.Add(this.grvNhaCungCap);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSuaNCC);
@@ -432,7 +433,9 @@ namespace GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmNhaCungCap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang chủ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.grvNhaCungCap)).EndInit();
             this.bunifuCards3.ResumeLayout(false);
             this.bunifuCards3.PerformLayout();

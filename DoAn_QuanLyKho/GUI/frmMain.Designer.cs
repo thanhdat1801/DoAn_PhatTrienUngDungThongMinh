@@ -29,6 +29,7 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblTen = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblChucVu = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -37,6 +38,8 @@ namespace GUI
             this.headerPanel = new System.Windows.Forms.Panel();
             this.lblHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.lblClose = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -68,9 +71,9 @@ namespace GUI
             this.lblTen.BackColor = System.Drawing.Color.Transparent;
             this.lblTen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTen.ForeColor = System.Drawing.Color.White;
-            this.lblTen.Location = new System.Drawing.Point(39, 124);
+            this.lblTen.Location = new System.Drawing.Point(39, 123);
             this.lblTen.Name = "lblTen";
-            this.lblTen.Size = new System.Drawing.Size(207, 23);
+            this.lblTen.Size = new System.Drawing.Size(160, 19);
             this.lblTen.TabIndex = 1;
             this.lblTen.Text = "Xin chào, Bill Gates!";
             this.lblTen.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
@@ -80,9 +83,9 @@ namespace GUI
             this.lblChucVu.AutoSize = true;
             this.lblChucVu.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChucVu.ForeColor = System.Drawing.Color.White;
-            this.lblChucVu.Location = new System.Drawing.Point(105, 157);
+            this.lblChucVu.Location = new System.Drawing.Point(112, 159);
             this.lblChucVu.Name = "lblChucVu";
-            this.lblChucVu.Size = new System.Drawing.Size(63, 21);
+            this.lblChucVu.Size = new System.Drawing.Size(53, 19);
             this.lblChucVu.TabIndex = 2;
             this.lblChucVu.Text = "Admin";
             this.lblChucVu.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
@@ -103,7 +106,7 @@ namespace GUI
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(285, 1040);
+            this.panel1.Size = new System.Drawing.Size(285, 968);
             this.panel1.TabIndex = 2;
             // 
             // panel2
@@ -121,6 +124,7 @@ namespace GUI
             // headerPanel
             // 
             this.headerPanel.BackColor = System.Drawing.Color.Transparent;
+            this.headerPanel.Controls.Add(this.lblClose);
             this.headerPanel.Controls.Add(this.pictureBox4);
             this.headerPanel.Controls.Add(this.pictureBox3);
             this.headerPanel.Controls.Add(this.pictureBox1);
@@ -128,7 +132,7 @@ namespace GUI
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Location = new System.Drawing.Point(285, 0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1633, 64);
+            this.headerPanel.Size = new System.Drawing.Size(1613, 64);
             this.headerPanel.TabIndex = 4;
             // 
             // lblHeader
@@ -138,7 +142,7 @@ namespace GUI
             this.lblHeader.ForeColor = System.Drawing.Color.Black;
             this.lblHeader.Location = new System.Drawing.Point(33, 16);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(108, 32);
+            this.lblHeader.Size = new System.Drawing.Size(85, 25);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "DauBuoi";
             // 
@@ -147,13 +151,30 @@ namespace GUI
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(285, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1633, 1040);
+            this.mainPanel.Size = new System.Drawing.Size(1613, 968);
             this.mainPanel.TabIndex = 3;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // lblClose
+            // 
+            this.lblClose.AutoSize = true;
+            this.lblClose.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.lblClose.Location = new System.Drawing.Point(1576, 9);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(25, 30);
+            this.lblClose.TabIndex = 4;
+            this.lblClose.Text = "x";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1557, 18);
+            this.pictureBox4.Location = new System.Drawing.Point(1495, 16);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -163,7 +184,7 @@ namespace GUI
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1507, 18);
+            this.pictureBox3.Location = new System.Drawing.Point(1445, 16);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -173,7 +194,7 @@ namespace GUI
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1457, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(1395, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,7 +224,7 @@ namespace GUI
             this.btnNhanVien.IconZoom = 60D;
             this.btnNhanVien.IsTab = false;
             this.btnNhanVien.Location = new System.Drawing.Point(13, 369);
-            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Normalcolor = System.Drawing.Color.Transparent;
             this.btnNhanVien.OnHovercolor = System.Drawing.Color.Transparent;
@@ -239,8 +260,8 @@ namespace GUI
             this.bunifuFlatButton6.IconVisible = true;
             this.bunifuFlatButton6.IconZoom = 60D;
             this.bunifuFlatButton6.IsTab = false;
-            this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 981);
-            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 909);
+            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
             this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.Transparent;
@@ -275,7 +296,7 @@ namespace GUI
             this.btnBaoCao_5.IconZoom = 60D;
             this.btnBaoCao_5.IsTab = false;
             this.btnBaoCao_5.Location = new System.Drawing.Point(13, 631);
-            this.btnBaoCao_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBaoCao_5.Margin = new System.Windows.Forms.Padding(4);
             this.btnBaoCao_5.Name = "btnBaoCao_5";
             this.btnBaoCao_5.Normalcolor = System.Drawing.Color.Transparent;
             this.btnBaoCao_5.OnHovercolor = System.Drawing.Color.Transparent;
@@ -312,7 +333,7 @@ namespace GUI
             this.btnSanPham_4.IconZoom = 60D;
             this.btnSanPham_4.IsTab = false;
             this.btnSanPham_4.Location = new System.Drawing.Point(12, 566);
-            this.btnSanPham_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSanPham_4.Margin = new System.Windows.Forms.Padding(4);
             this.btnSanPham_4.Name = "btnSanPham_4";
             this.btnSanPham_4.Normalcolor = System.Drawing.Color.Transparent;
             this.btnSanPham_4.OnHovercolor = System.Drawing.Color.Transparent;
@@ -348,7 +369,7 @@ namespace GUI
             this.btnKho_3.IconZoom = 60D;
             this.btnKho_3.IsTab = false;
             this.btnKho_3.Location = new System.Drawing.Point(13, 501);
-            this.btnKho_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKho_3.Margin = new System.Windows.Forms.Padding(4);
             this.btnKho_3.Name = "btnKho_3";
             this.btnKho_3.Normalcolor = System.Drawing.Color.Transparent;
             this.btnKho_3.OnHovercolor = System.Drawing.Color.Transparent;
@@ -384,7 +405,7 @@ namespace GUI
             this.btnLienHe_2.IconZoom = 60D;
             this.btnLienHe_2.IsTab = false;
             this.btnLienHe_2.Location = new System.Drawing.Point(13, 436);
-            this.btnLienHe_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLienHe_2.Margin = new System.Windows.Forms.Padding(4);
             this.btnLienHe_2.Name = "btnLienHe_2";
             this.btnLienHe_2.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLienHe_2.OnHovercolor = System.Drawing.Color.Transparent;
@@ -421,7 +442,7 @@ namespace GUI
             this.btnTrangChu_1.IconZoom = 60D;
             this.btnTrangChu_1.IsTab = false;
             this.btnTrangChu_1.Location = new System.Drawing.Point(13, 302);
-            this.btnTrangChu_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTrangChu_1.Margin = new System.Windows.Forms.Padding(4);
             this.btnTrangChu_1.Name = "btnTrangChu_1";
             this.btnTrangChu_1.Normalcolor = System.Drawing.Color.Transparent;
             this.btnTrangChu_1.OnHovercolor = System.Drawing.Color.Transparent;
@@ -469,6 +490,7 @@ namespace GUI
             this.bunifuThinButton21.Size = new System.Drawing.Size(194, 41);
             this.bunifuThinButton21.TabIndex = 4;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // picNhanVien
             // 
@@ -496,15 +518,15 @@ namespace GUI
             // 
             this.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Appearance.Options.UseBackColor = true;
-            this.ClientSize = new System.Drawing.Size(1918, 1040);
+            this.ClientSize = new System.Drawing.Size(1898, 968);
             this.Controls.Add(this.headerPanel);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Màn hình làm việc";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -543,5 +565,7 @@ namespace GUI
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuFlatButton btnNhanVien;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Label lblClose;
     }
 }

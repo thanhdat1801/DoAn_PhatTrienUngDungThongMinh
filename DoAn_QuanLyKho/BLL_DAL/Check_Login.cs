@@ -36,5 +36,27 @@ namespace BLL_DAL
                 return false;
             }
         }
+
+        public string getIDUser(string strUser, string strPass)
+        {
+            string manv;
+            NGUOIDUNG nv = quanLyKho.NGUOIDUNGs.Where(t => t.ID_DN == strUser && t.MATKHAU == strPass).FirstOrDefault();
+            if (nv == null)
+            {
+                return null; //No ID User
+            }
+            else
+            {
+                manv = nv.ID_DN;
+                return manv;
+            }
+        }
+
+        //Lấy tên
+        public string getTenNhanVien(string id_dn)
+        {
+            NGUOIDUNG nd = quanLyKho.NGUOIDUNGs.FirstOrDefault(s => s.ID_DN == id_dn);
+            return nd.TEN;
+        }
     }
 }

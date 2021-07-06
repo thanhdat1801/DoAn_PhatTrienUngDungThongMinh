@@ -14,9 +14,11 @@ namespace GUI
     {
         Check_Login login = new Check_Login();
         DefendPassword password = new DefendPassword();
+        string manv;
         public frmLogin()
         {
             InitializeComponent();
+            txtPass.isPassword = true;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -84,14 +86,23 @@ namespace GUI
         private void btnLogin_Click(object sender, EventArgs e)
         {
             AppSetting setting = new AppSetting();
-            if(login.IsvalidUser(txtUsername.Text, txtPass.Text))
+            if(txtUsername.Text == "")
+            {
+                MessageBox.Show("User name không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if(txtPass.Text == "")
+            {
+                MessageBox.Show("Mật khẩu không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }  
+            else if(login.IsvalidUser(txtUsername.Text, txtPass.Text))
             {
                 //MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 using (WaitForm1 frm = new WaitForm1(setting.SaveData))
                 {
                     frm.ShowDialog(this);
                 }
-                frmMain frmQuanLyKho = new frmMain();
+                manv = login.getIDUser(txtUsername.Text, txtPass.Text);
+                frmMain frmQuanLyKho = new frmMain(manv);
                 frmQuanLyKho.Show();
                 this.Hide();
             }

@@ -58,9 +58,9 @@ namespace GUI
             this.txtSoDT1 = new Custom_Control.txtNumber();
             this.txtSoDT2 = new Custom_Control.txtNumber();
             this.txtFax = new Custom_Control.txtNumber();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtIDCompany = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,9 +73,8 @@ namespace GUI
             this.panelLeft.Controls.Add(this.pictureBox1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelLeft.Margin = new System.Windows.Forms.Padding(4);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(428, 742);
+            this.panelLeft.Size = new System.Drawing.Size(367, 603);
             this.panelLeft.TabIndex = 4;
             // 
             // label9
@@ -83,10 +82,9 @@ namespace GUI
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(13, 691);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(11, 561);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(260, 30);
+            this.label9.Size = new System.Drawing.Size(206, 22);
             this.label9.TabIndex = 2;
             this.label9.Text = "Beta Version 1.0 2021";
             // 
@@ -95,10 +93,9 @@ namespace GUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 392);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(19, 318);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(385, 30);
+            this.label1.Size = new System.Drawing.Size(297, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG";
             // 
@@ -112,10 +109,9 @@ namespace GUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label2.Location = new System.Drawing.Point(436, 32);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(374, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(377, 37);
+            this.label2.Size = new System.Drawing.Size(310, 30);
             this.label2.TabIndex = 5;
             this.label2.Text = "Thiết lập công ty của bạn";
             // 
@@ -131,10 +127,10 @@ namespace GUI
             this.txtCompany.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtCompany.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtCompany.LineThickness = 3;
-            this.txtCompany.Location = new System.Drawing.Point(443, 197);
-            this.txtCompany.Margin = new System.Windows.Forms.Padding(5);
+            this.txtCompany.Location = new System.Drawing.Point(380, 160);
+            this.txtCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCompany.Name = "txtCompany";
-            this.txtCompany.Size = new System.Drawing.Size(396, 38);
+            this.txtCompany.Size = new System.Drawing.Size(339, 31);
             this.txtCompany.TabIndex = 2;
             this.txtCompany.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -143,10 +139,9 @@ namespace GUI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label3.Location = new System.Drawing.Point(439, 169);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(376, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 23);
+            this.label3.Size = new System.Drawing.Size(106, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "&Tên công ty:";
             // 
@@ -162,10 +157,10 @@ namespace GUI
             this.txtChiNhanhChinh.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtChiNhanhChinh.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtChiNhanhChinh.LineThickness = 3;
-            this.txtChiNhanhChinh.Location = new System.Drawing.Point(440, 284);
-            this.txtChiNhanhChinh.Margin = new System.Windows.Forms.Padding(5);
+            this.txtChiNhanhChinh.Location = new System.Drawing.Point(377, 231);
+            this.txtChiNhanhChinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtChiNhanhChinh.Name = "txtChiNhanhChinh";
-            this.txtChiNhanhChinh.Size = new System.Drawing.Size(396, 38);
+            this.txtChiNhanhChinh.Size = new System.Drawing.Size(339, 31);
             this.txtChiNhanhChinh.TabIndex = 3;
             this.txtChiNhanhChinh.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -174,10 +169,9 @@ namespace GUI
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label4.Location = new System.Drawing.Point(436, 256);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(374, 208);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(174, 23);
+            this.label4.Size = new System.Drawing.Size(142, 21);
             this.label4.TabIndex = 8;
             this.label4.Text = "&Chi nhánh chính:";
             // 
@@ -193,10 +187,10 @@ namespace GUI
             this.txtChiNhanhPhu.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtChiNhanhPhu.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtChiNhanhPhu.LineThickness = 3;
-            this.txtChiNhanhPhu.Location = new System.Drawing.Point(443, 371);
-            this.txtChiNhanhPhu.Margin = new System.Windows.Forms.Padding(5);
+            this.txtChiNhanhPhu.Location = new System.Drawing.Point(380, 301);
+            this.txtChiNhanhPhu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtChiNhanhPhu.Name = "txtChiNhanhPhu";
-            this.txtChiNhanhPhu.Size = new System.Drawing.Size(396, 38);
+            this.txtChiNhanhPhu.Size = new System.Drawing.Size(339, 31);
             this.txtChiNhanhPhu.TabIndex = 4;
             this.txtChiNhanhPhu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -205,10 +199,9 @@ namespace GUI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label5.Location = new System.Drawing.Point(439, 343);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(376, 279);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 23);
+            this.label5.Size = new System.Drawing.Size(129, 21);
             this.label5.TabIndex = 10;
             this.label5.Text = "&Chi nhánh phụ:";
             // 
@@ -224,10 +217,10 @@ namespace GUI
             this.txtThanhPho.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtThanhPho.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtThanhPho.LineThickness = 3;
-            this.txtThanhPho.Location = new System.Drawing.Point(443, 458);
-            this.txtThanhPho.Margin = new System.Windows.Forms.Padding(5);
+            this.txtThanhPho.Location = new System.Drawing.Point(380, 372);
+            this.txtThanhPho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtThanhPho.Name = "txtThanhPho";
-            this.txtThanhPho.Size = new System.Drawing.Size(396, 38);
+            this.txtThanhPho.Size = new System.Drawing.Size(339, 31);
             this.txtThanhPho.TabIndex = 5;
             this.txtThanhPho.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -236,10 +229,9 @@ namespace GUI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label6.Location = new System.Drawing.Point(439, 430);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(376, 349);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(170, 23);
+            this.label6.Size = new System.Drawing.Size(144, 21);
             this.label6.TabIndex = 12;
             this.label6.Text = "&Thành phố (Tỉnh):";
             // 
@@ -248,10 +240,9 @@ namespace GUI
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label7.Location = new System.Drawing.Point(439, 517);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(376, 420);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 23);
+            this.label7.Size = new System.Drawing.Size(111, 21);
             this.label7.TabIndex = 14;
             this.label7.Text = "&Mã bưu điện:";
             // 
@@ -260,10 +251,9 @@ namespace GUI
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label8.Location = new System.Drawing.Point(889, 88);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(762, 72);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 23);
+            this.label8.Size = new System.Drawing.Size(75, 21);
             this.label8.TabIndex = 16;
             this.label8.Text = "&Số Serial:";
             // 
@@ -272,10 +262,9 @@ namespace GUI
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label10.Location = new System.Drawing.Point(889, 169);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(762, 137);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 23);
+            this.label10.Size = new System.Drawing.Size(124, 21);
             this.label10.TabIndex = 18;
             this.label10.Text = "&Số điện thoại 1:";
             // 
@@ -284,10 +273,9 @@ namespace GUI
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label11.Location = new System.Drawing.Point(889, 256);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(762, 208);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(145, 23);
+            this.label11.Size = new System.Drawing.Size(124, 21);
             this.label11.TabIndex = 20;
             this.label11.Text = "&Số điện thoại 2:";
             // 
@@ -296,10 +284,9 @@ namespace GUI
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label12.Location = new System.Drawing.Point(889, 343);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(762, 279);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 23);
+            this.label12.Size = new System.Drawing.Size(65, 21);
             this.label12.TabIndex = 22;
             this.label12.Text = "&Số FAX:";
             // 
@@ -308,10 +295,9 @@ namespace GUI
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label13.Location = new System.Drawing.Point(889, 430);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(762, 349);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(259, 23);
+            this.label13.Size = new System.Drawing.Size(209, 21);
             this.label13.TabIndex = 24;
             this.label13.Text = "&Email đăng ký phần mềm:";
             // 
@@ -327,10 +313,10 @@ namespace GUI
             this.txtKichHoat.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtKichHoat.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtKichHoat.LineThickness = 3;
-            this.txtKichHoat.Location = new System.Drawing.Point(893, 546);
-            this.txtKichHoat.Margin = new System.Windows.Forms.Padding(5);
+            this.txtKichHoat.Location = new System.Drawing.Point(765, 444);
+            this.txtKichHoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKichHoat.Name = "txtKichHoat";
-            this.txtKichHoat.Size = new System.Drawing.Size(396, 38);
+            this.txtKichHoat.Size = new System.Drawing.Size(339, 31);
             this.txtKichHoat.TabIndex = 12;
             this.txtKichHoat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -339,10 +325,9 @@ namespace GUI
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label14.Location = new System.Drawing.Point(889, 517);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(762, 420);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(245, 23);
+            this.label14.Size = new System.Drawing.Size(202, 21);
             this.label14.TabIndex = 26;
             this.label14.Text = "&Mã kích hoạt phần mềm:";
             // 
@@ -352,10 +337,9 @@ namespace GUI
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(893, 650);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Location = new System.Drawing.Point(765, 528);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(396, 42);
+            this.btnLuu.Size = new System.Drawing.Size(339, 34);
             this.btnLuu.TabIndex = 29;
             this.btnLuu.Text = "&Lưu thiết lập công ty";
             this.btnLuu.UseVisualStyleBackColor = false;
@@ -373,10 +357,9 @@ namespace GUI
             this.txtEmail.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtEmail.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtEmail.LineThickness = 3;
-            this.txtEmail.Location = new System.Drawing.Point(893, 452);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Location = new System.Drawing.Point(765, 367);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(396, 44);
+            this.txtEmail.Size = new System.Drawing.Size(339, 36);
             this.txtEmail.TabIndex = 11;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -392,10 +375,9 @@ namespace GUI
             this.txtMaBuuDien.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtMaBuuDien.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtMaBuuDien.LineThickness = 3;
-            this.txtMaBuuDien.Location = new System.Drawing.Point(443, 545);
-            this.txtMaBuuDien.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaBuuDien.Location = new System.Drawing.Point(380, 443);
             this.txtMaBuuDien.Name = "txtMaBuuDien";
-            this.txtMaBuuDien.Size = new System.Drawing.Size(396, 38);
+            this.txtMaBuuDien.Size = new System.Drawing.Size(339, 31);
             this.txtMaBuuDien.TabIndex = 6;
             this.txtMaBuuDien.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -411,10 +393,9 @@ namespace GUI
             this.txtSoSeri.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtSoSeri.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtSoSeri.LineThickness = 3;
-            this.txtSoSeri.Location = new System.Drawing.Point(893, 115);
-            this.txtSoSeri.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoSeri.Location = new System.Drawing.Point(765, 93);
             this.txtSoSeri.Name = "txtSoSeri";
-            this.txtSoSeri.Size = new System.Drawing.Size(396, 38);
+            this.txtSoSeri.Size = new System.Drawing.Size(339, 31);
             this.txtSoSeri.TabIndex = 7;
             this.txtSoSeri.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -430,10 +411,9 @@ namespace GUI
             this.txtSoDT1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtSoDT1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtSoDT1.LineThickness = 3;
-            this.txtSoDT1.Location = new System.Drawing.Point(893, 196);
-            this.txtSoDT1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoDT1.Location = new System.Drawing.Point(765, 159);
             this.txtSoDT1.Name = "txtSoDT1";
-            this.txtSoDT1.Size = new System.Drawing.Size(396, 38);
+            this.txtSoDT1.Size = new System.Drawing.Size(339, 31);
             this.txtSoDT1.TabIndex = 8;
             this.txtSoDT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -449,10 +429,9 @@ namespace GUI
             this.txtSoDT2.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtSoDT2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtSoDT2.LineThickness = 3;
-            this.txtSoDT2.Location = new System.Drawing.Point(893, 285);
-            this.txtSoDT2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoDT2.Location = new System.Drawing.Point(765, 232);
             this.txtSoDT2.Name = "txtSoDT2";
-            this.txtSoDT2.Size = new System.Drawing.Size(396, 38);
+            this.txtSoDT2.Size = new System.Drawing.Size(339, 31);
             this.txtSoDT2.TabIndex = 9;
             this.txtSoDT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -468,23 +447,11 @@ namespace GUI
             this.txtFax.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtFax.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtFax.LineThickness = 3;
-            this.txtFax.Location = new System.Drawing.Point(893, 370);
-            this.txtFax.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFax.Location = new System.Drawing.Point(765, 301);
             this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(396, 38);
+            this.txtFax.Size = new System.Drawing.Size(339, 31);
             this.txtFax.TabIndex = 10;
             this.txtFax.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(88, 127);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 241);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // txtIDCompany
             // 
@@ -498,10 +465,10 @@ namespace GUI
             this.txtIDCompany.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtIDCompany.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtIDCompany.LineThickness = 3;
-            this.txtIDCompany.Location = new System.Drawing.Point(443, 115);
-            this.txtIDCompany.Margin = new System.Windows.Forms.Padding(5);
+            this.txtIDCompany.Location = new System.Drawing.Point(380, 93);
+            this.txtIDCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIDCompany.Name = "txtIDCompany";
-            this.txtIDCompany.Size = new System.Drawing.Size(396, 38);
+            this.txtIDCompany.Size = new System.Drawing.Size(339, 31);
             this.txtIDCompany.TabIndex = 1;
             this.txtIDCompany.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -510,18 +477,27 @@ namespace GUI
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label15.Location = new System.Drawing.Point(441, 88);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(378, 72);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(116, 23);
+            this.label15.Size = new System.Drawing.Size(95, 21);
             this.label15.TabIndex = 31;
             this.label15.Text = "&ID công ty:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(75, 103);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmSetupCompany
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1318, 742);
+            this.ClientSize = new System.Drawing.Size(1130, 603);
             this.Controls.Add(this.txtIDCompany);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.txtFax);
@@ -550,6 +526,7 @@ namespace GUI
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmSetupCompany";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSetupCompany";

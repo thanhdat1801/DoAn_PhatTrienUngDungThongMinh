@@ -30,44 +30,49 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDiaChiKho = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.lblKho = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblTinhTrang = new DevExpress.XtraEditors.LabelControl();
+            this.lblNgaySinh = new DevExpress.XtraEditors.LabelControl();
+            this.lblGioiTinh = new DevExpress.XtraEditors.LabelControl();
+            this.lblDiaChi = new DevExpress.XtraEditors.LabelControl();
+            this.lblSDT = new DevExpress.XtraEditors.LabelControl();
+            this.lblTenNV = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.grvNhanVien = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.btnSuaNCC = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnXoaNCC = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnThemNCC = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnNhomNguoiDung = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnThemNguoiDungVaoNhom = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnPhanQuyenNhomNguoiDung = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnDanhMucMH = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCards2.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grvNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -75,7 +80,6 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grvNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,6 +101,7 @@ namespace GUI
             this.txtSearch.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtSearch.LineThickness = 3;
             this.txtSearch.Location = new System.Drawing.Point(21, 18);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(474, 37);
             this.txtSearch.TabIndex = 2;
@@ -109,56 +114,35 @@ namespace GUI
             this.bunifuCards2.BorderRadius = 40;
             this.bunifuCards2.BottomSahddow = true;
             this.bunifuCards2.color = System.Drawing.Color.Transparent;
+            this.bunifuCards2.Controls.Add(this.btnNhomNguoiDung);
+            this.bunifuCards2.Controls.Add(this.btnThemNguoiDungVaoNhom);
+            this.bunifuCards2.Controls.Add(this.btnPhanQuyenNhomNguoiDung);
+            this.bunifuCards2.Controls.Add(this.btnDanhMucMH);
             this.bunifuCards2.Controls.Add(this.bunifuThinButton21);
             this.bunifuCards2.Controls.Add(this.bunifuCards3);
             this.bunifuCards2.Controls.Add(this.pictureBox4);
-            this.bunifuCards2.Controls.Add(this.labelControl5);
+            this.bunifuCards2.Controls.Add(this.lblTinhTrang);
             this.bunifuCards2.Controls.Add(this.pictureBox5);
-            this.bunifuCards2.Controls.Add(this.labelControl6);
+            this.bunifuCards2.Controls.Add(this.lblNgaySinh);
             this.bunifuCards2.Controls.Add(this.pictureBox6);
-            this.bunifuCards2.Controls.Add(this.labelControl7);
+            this.bunifuCards2.Controls.Add(this.lblGioiTinh);
             this.bunifuCards2.Controls.Add(this.pictureBox3);
-            this.bunifuCards2.Controls.Add(this.labelControl4);
+            this.bunifuCards2.Controls.Add(this.lblDiaChi);
             this.bunifuCards2.Controls.Add(this.pictureBox2);
-            this.bunifuCards2.Controls.Add(this.labelControl3);
+            this.bunifuCards2.Controls.Add(this.lblSDT);
             this.bunifuCards2.Controls.Add(this.pictureBox1);
-            this.bunifuCards2.Controls.Add(this.labelControl2);
+            this.bunifuCards2.Controls.Add(this.lblTenNV);
             this.bunifuCards2.Controls.Add(this.labelControl1);
             this.bunifuCards2.Controls.Add(this.picNhanVien);
             this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(553, 74);
+            this.bunifuCards2.Location = new System.Drawing.Point(626, 76);
             this.bunifuCards2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuCards2.Name = "bunifuCards2";
             this.bunifuCards2.RightSahddow = true;
             this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(828, 657);
+            this.bunifuCards2.Size = new System.Drawing.Size(828, 598);
             this.bunifuCards2.TabIndex = 5;
             this.bunifuCards2.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards2_Paint);
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 35;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Xem thông tin tài khoản";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(143, 190);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(274, 48);
-            this.bunifuThinButton21.TabIndex = 9;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuCards3
             // 
@@ -166,9 +150,9 @@ namespace GUI
             this.bunifuCards3.BorderRadius = 40;
             this.bunifuCards3.BottomSahddow = true;
             this.bunifuCards3.color = System.Drawing.Color.Transparent;
-            this.bunifuCards3.Controls.Add(this.labelControl11);
+            this.bunifuCards3.Controls.Add(this.lblDiaChiKho);
             this.bunifuCards3.Controls.Add(this.labelControl12);
-            this.bunifuCards3.Controls.Add(this.labelControl10);
+            this.bunifuCards3.Controls.Add(this.lblKho);
             this.bunifuCards3.Controls.Add(this.labelControl9);
             this.bunifuCards3.Controls.Add(this.labelControl8);
             this.bunifuCards3.LeftSahddow = false;
@@ -180,16 +164,16 @@ namespace GUI
             this.bunifuCards3.Size = new System.Drawing.Size(797, 128);
             this.bunifuCards3.TabIndex = 15;
             // 
-            // labelControl11
+            // lblDiaChiKho
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(160, 81);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(107, 20);
-            this.labelControl11.TabIndex = 19;
-            this.labelControl11.Text = "Thành phố HCM";
+            this.lblDiaChiKho.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiaChiKho.Appearance.Options.UseFont = true;
+            this.lblDiaChiKho.Location = new System.Drawing.Point(160, 81);
+            this.lblDiaChiKho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblDiaChiKho.Name = "lblDiaChiKho";
+            this.lblDiaChiKho.Size = new System.Drawing.Size(107, 20);
+            this.lblDiaChiKho.TabIndex = 19;
+            this.lblDiaChiKho.Text = "Thành phố HCM";
             // 
             // labelControl12
             // 
@@ -202,16 +186,16 @@ namespace GUI
             this.labelControl12.TabIndex = 18;
             this.labelControl12.Text = "Địa điểm:";
             // 
-            // labelControl10
+            // lblKho
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(160, 48);
-            this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(37, 19);
-            this.labelControl10.TabIndex = 17;
-            this.labelControl10.Text = "Kho A";
+            this.lblKho.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKho.Appearance.Options.UseFont = true;
+            this.lblKho.Location = new System.Drawing.Point(160, 48);
+            this.lblKho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblKho.Name = "lblKho";
+            this.lblKho.Size = new System.Drawing.Size(37, 19);
+            this.lblKho.TabIndex = 17;
+            this.lblKho.Text = "Kho A";
             // 
             // labelControl9
             // 
@@ -220,9 +204,9 @@ namespace GUI
             this.labelControl9.Location = new System.Drawing.Point(17, 48);
             this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(119, 20);
+            this.labelControl9.Size = new System.Drawing.Size(126, 20);
             this.labelControl9.TabIndex = 16;
-            this.labelControl9.Text = "Kho đang quản lý:";
+            this.labelControl9.Text = "Kho đang làm việc:";
             // 
             // labelControl8
             // 
@@ -235,137 +219,71 @@ namespace GUI
             this.labelControl8.TabIndex = 16;
             this.labelControl8.Text = "THÔNG TIN KHO ĐANG LÀM VIỆC:";
             // 
-            // pictureBox4
+            // lblTinhTrang
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(476, 139);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
+            this.lblTinhTrang.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTinhTrang.Appearance.Options.UseFont = true;
+            this.lblTinhTrang.Location = new System.Drawing.Point(532, 149);
+            this.lblTinhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblTinhTrang.Name = "lblTinhTrang";
+            this.lblTinhTrang.Size = new System.Drawing.Size(109, 20);
+            this.lblTinhTrang.TabIndex = 13;
+            this.lblTinhTrang.Text = "Đang hoạt động";
             // 
-            // labelControl5
+            // lblNgaySinh
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(532, 149);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(109, 20);
-            this.labelControl5.TabIndex = 13;
-            this.labelControl5.Text = "Đang hoạt động";
+            this.lblNgaySinh.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgaySinh.Appearance.Options.UseFont = true;
+            this.lblNgaySinh.Location = new System.Drawing.Point(532, 103);
+            this.lblNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblNgaySinh.Name = "lblNgaySinh";
+            this.lblNgaySinh.Size = new System.Drawing.Size(74, 19);
+            this.lblNgaySinh.TabIndex = 11;
+            this.lblNgaySinh.Text = "15/07/2000";
             // 
-            // pictureBox5
+            // lblGioiTinh
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(476, 93);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
+            this.lblGioiTinh.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGioiTinh.Appearance.Options.UseFont = true;
+            this.lblGioiTinh.Location = new System.Drawing.Point(532, 58);
+            this.lblGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblGioiTinh.Name = "lblGioiTinh";
+            this.lblGioiTinh.Size = new System.Drawing.Size(29, 19);
+            this.lblGioiTinh.TabIndex = 9;
+            this.lblGioiTinh.Text = "Nam";
             // 
-            // labelControl6
+            // lblDiaChi
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(532, 103);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(74, 19);
-            this.labelControl6.TabIndex = 11;
-            this.labelControl6.Text = "15/07/2000";
+            this.lblDiaChi.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiaChi.Appearance.Options.UseFont = true;
+            this.lblDiaChi.Location = new System.Drawing.Point(200, 149);
+            this.lblDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(156, 20);
+            this.lblDiaChi.TabIndex = 7;
+            this.lblDiaChi.Text = "Thành phố Hồ Chí Minh";
             // 
-            // pictureBox6
+            // lblSDT
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(476, 48);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
+            this.lblSDT.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSDT.Appearance.Options.UseFont = true;
+            this.lblSDT.Location = new System.Drawing.Point(200, 103);
+            this.lblSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(80, 19);
+            this.lblSDT.TabIndex = 5;
+            this.lblSDT.Text = "0944826504";
             // 
-            // labelControl7
+            // lblTenNV
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(532, 58);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(29, 19);
-            this.labelControl7.TabIndex = 9;
-            this.labelControl7.Text = "Nam";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(143, 139);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(200, 149);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(156, 20);
-            this.labelControl4.TabIndex = 7;
-            this.labelControl4.Text = "Thành phố Hồ Chí Minh";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(143, 93);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(200, 103);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(80, 19);
-            this.labelControl3.TabIndex = 5;
-            this.labelControl3.Text = "0944826504";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(143, 48);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(200, 58);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(56, 19);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "Bill Gates";
+            this.lblTenNV.Appearance.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenNV.Appearance.Options.UseFont = true;
+            this.lblTenNV.Location = new System.Drawing.Point(200, 58);
+            this.lblTenNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblTenNV.Name = "lblTenNV";
+            this.lblTenNV.Size = new System.Drawing.Size(56, 19);
+            this.lblTenNV.TabIndex = 3;
+            this.lblTenNV.Text = "Bill Gates";
             // 
             // labelControl1
             // 
@@ -378,23 +296,12 @@ namespace GUI
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "THÔNG TIN NHÂN VIÊN";
             // 
-            // picNhanVien
-            // 
-            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
-            this.picNhanVien.Location = new System.Drawing.Point(21, 20);
-            this.picNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Size = new System.Drawing.Size(86, 81);
-            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picNhanVien.TabIndex = 1;
-            this.picNhanVien.TabStop = false;
-            // 
             // grvNhanVien
             // 
             this.grvNhanVien.AllowUserToAddRows = false;
             this.grvNhanVien.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.grvNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.grvNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.grvNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -403,26 +310,26 @@ namespace GUI
             this.grvNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grvNhanVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grvNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.grvNhanVien.ColumnHeadersHeight = 50;
             this.grvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grvNhanVien.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grvNhanVien.DefaultCellStyle = dataGridViewCellStyle9;
             this.grvNhanVien.DoubleBuffered = true;
             this.grvNhanVien.EnableHeadersVisualStyles = false;
             this.grvNhanVien.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
@@ -438,11 +345,18 @@ namespace GUI
             this.grvNhanVien.RowTemplate.Height = 30;
             this.grvNhanVien.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.grvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grvNhanVien.Size = new System.Drawing.Size(492, 641);
+            this.grvNhanVien.Size = new System.Drawing.Size(366, 557);
             this.grvNhanVien.TabIndex = 1;
+            this.grvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvNhanVien_CellClick);
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 20;
+            this.bunifuElipse2.TargetControl = this.grvNhanVien;
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "ID_DN";
             this.Column1.HeaderText = "ID";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
@@ -450,15 +364,11 @@ namespace GUI
             // 
             // Column2
             // 
+            this.Column2.DataPropertyName = "TEN";
             this.Column2.HeaderText = "Tên nhân viên";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 20;
-            this.bunifuElipse2.TargetControl = this.grvNhanVien;
             // 
             // btnSuaNCC
             // 
@@ -479,7 +389,7 @@ namespace GUI
             this.btnSuaNCC.IdleForecolor = System.Drawing.Color.White;
             this.btnSuaNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSuaNCC.Location = new System.Drawing.Point(1284, 6);
-            this.btnSuaNCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSuaNCC.Margin = new System.Windows.Forms.Padding(4);
             this.btnSuaNCC.Name = "btnSuaNCC";
             this.btnSuaNCC.Size = new System.Drawing.Size(95, 48);
             this.btnSuaNCC.TabIndex = 8;
@@ -504,7 +414,7 @@ namespace GUI
             this.btnXoaNCC.IdleForecolor = System.Drawing.Color.White;
             this.btnXoaNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnXoaNCC.Location = new System.Drawing.Point(1188, 6);
-            this.btnXoaNCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoaNCC.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaNCC.Name = "btnXoaNCC";
             this.btnXoaNCC.Size = new System.Drawing.Size(95, 48);
             this.btnXoaNCC.TabIndex = 7;
@@ -529,11 +439,218 @@ namespace GUI
             this.btnThemNCC.IdleForecolor = System.Drawing.Color.White;
             this.btnThemNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThemNCC.Location = new System.Drawing.Point(1092, 6);
-            this.btnThemNCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemNCC.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemNCC.Name = "btnThemNCC";
             this.btnThemNCC.Size = new System.Drawing.Size(95, 48);
             this.btnThemNCC.TabIndex = 6;
             this.btnThemNCC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnNhomNguoiDung
+            // 
+            this.btnNhomNguoiDung.ActiveBorderThickness = 1;
+            this.btnNhomNguoiDung.ActiveCornerRadius = 35;
+            this.btnNhomNguoiDung.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnNhomNguoiDung.ActiveForecolor = System.Drawing.Color.White;
+            this.btnNhomNguoiDung.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnNhomNguoiDung.BackColor = System.Drawing.Color.White;
+            this.btnNhomNguoiDung.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNhomNguoiDung.BackgroundImage")));
+            this.btnNhomNguoiDung.ButtonText = "Quản lý nhóm người dùng";
+            this.btnNhomNguoiDung.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNhomNguoiDung.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhomNguoiDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnNhomNguoiDung.IdleBorderThickness = 1;
+            this.btnNhomNguoiDung.IdleCornerRadius = 20;
+            this.btnNhomNguoiDung.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnNhomNguoiDung.IdleForecolor = System.Drawing.Color.White;
+            this.btnNhomNguoiDung.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnNhomNguoiDung.Location = new System.Drawing.Point(312, 389);
+            this.btnNhomNguoiDung.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNhomNguoiDung.Name = "btnNhomNguoiDung";
+            this.btnNhomNguoiDung.Size = new System.Drawing.Size(274, 48);
+            this.btnNhomNguoiDung.TabIndex = 19;
+            this.btnNhomNguoiDung.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNhomNguoiDung.Click += new System.EventHandler(this.btnNhomNguoiDung_Click);
+            // 
+            // btnThemNguoiDungVaoNhom
+            // 
+            this.btnThemNguoiDungVaoNhom.ActiveBorderThickness = 1;
+            this.btnThemNguoiDungVaoNhom.ActiveCornerRadius = 35;
+            this.btnThemNguoiDungVaoNhom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThemNguoiDungVaoNhom.ActiveForecolor = System.Drawing.Color.White;
+            this.btnThemNguoiDungVaoNhom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThemNguoiDungVaoNhom.BackColor = System.Drawing.Color.White;
+            this.btnThemNguoiDungVaoNhom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemNguoiDungVaoNhom.BackgroundImage")));
+            this.btnThemNguoiDungVaoNhom.ButtonText = "Thêm người dùng vào nhóm";
+            this.btnThemNguoiDungVaoNhom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemNguoiDungVaoNhom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNguoiDungVaoNhom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThemNguoiDungVaoNhom.IdleBorderThickness = 1;
+            this.btnThemNguoiDungVaoNhom.IdleCornerRadius = 20;
+            this.btnThemNguoiDungVaoNhom.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThemNguoiDungVaoNhom.IdleForecolor = System.Drawing.Color.White;
+            this.btnThemNguoiDungVaoNhom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThemNguoiDungVaoNhom.Location = new System.Drawing.Point(21, 472);
+            this.btnThemNguoiDungVaoNhom.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemNguoiDungVaoNhom.Name = "btnThemNguoiDungVaoNhom";
+            this.btnThemNguoiDungVaoNhom.Size = new System.Drawing.Size(274, 48);
+            this.btnThemNguoiDungVaoNhom.TabIndex = 18;
+            this.btnThemNguoiDungVaoNhom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThemNguoiDungVaoNhom.Click += new System.EventHandler(this.btnThemNguoiDungVaoNhom_Click);
+            // 
+            // btnPhanQuyenNhomNguoiDung
+            // 
+            this.btnPhanQuyenNhomNguoiDung.ActiveBorderThickness = 1;
+            this.btnPhanQuyenNhomNguoiDung.ActiveCornerRadius = 35;
+            this.btnPhanQuyenNhomNguoiDung.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPhanQuyenNhomNguoiDung.ActiveForecolor = System.Drawing.Color.White;
+            this.btnPhanQuyenNhomNguoiDung.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPhanQuyenNhomNguoiDung.BackColor = System.Drawing.Color.White;
+            this.btnPhanQuyenNhomNguoiDung.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhanQuyenNhomNguoiDung.BackgroundImage")));
+            this.btnPhanQuyenNhomNguoiDung.ButtonText = "Phân quyền nhóm người dùng";
+            this.btnPhanQuyenNhomNguoiDung.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhanQuyenNhomNguoiDung.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhanQuyenNhomNguoiDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPhanQuyenNhomNguoiDung.IdleBorderThickness = 1;
+            this.btnPhanQuyenNhomNguoiDung.IdleCornerRadius = 20;
+            this.btnPhanQuyenNhomNguoiDung.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPhanQuyenNhomNguoiDung.IdleForecolor = System.Drawing.Color.White;
+            this.btnPhanQuyenNhomNguoiDung.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPhanQuyenNhomNguoiDung.Location = new System.Drawing.Point(312, 472);
+            this.btnPhanQuyenNhomNguoiDung.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPhanQuyenNhomNguoiDung.Name = "btnPhanQuyenNhomNguoiDung";
+            this.btnPhanQuyenNhomNguoiDung.Size = new System.Drawing.Size(274, 48);
+            this.btnPhanQuyenNhomNguoiDung.TabIndex = 17;
+            this.btnPhanQuyenNhomNguoiDung.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPhanQuyenNhomNguoiDung.Click += new System.EventHandler(this.btnPhanQuyenNhomNguoiDung_Click);
+            // 
+            // btnDanhMucMH
+            // 
+            this.btnDanhMucMH.ActiveBorderThickness = 1;
+            this.btnDanhMucMH.ActiveCornerRadius = 35;
+            this.btnDanhMucMH.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDanhMucMH.ActiveForecolor = System.Drawing.Color.White;
+            this.btnDanhMucMH.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDanhMucMH.BackColor = System.Drawing.Color.White;
+            this.btnDanhMucMH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDanhMucMH.BackgroundImage")));
+            this.btnDanhMucMH.ButtonText = "Quản lý danh mục màn hình";
+            this.btnDanhMucMH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDanhMucMH.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhMucMH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDanhMucMH.IdleBorderThickness = 1;
+            this.btnDanhMucMH.IdleCornerRadius = 20;
+            this.btnDanhMucMH.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDanhMucMH.IdleForecolor = System.Drawing.Color.White;
+            this.btnDanhMucMH.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDanhMucMH.Location = new System.Drawing.Point(22, 389);
+            this.btnDanhMucMH.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDanhMucMH.Name = "btnDanhMucMH";
+            this.btnDanhMucMH.Size = new System.Drawing.Size(274, 48);
+            this.btnDanhMucMH.TabIndex = 16;
+            this.btnDanhMucMH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDanhMucMH.Click += new System.EventHandler(this.btnDanhMucMH_Click);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 35;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Xem thông tin tài khoản";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(143, 190);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(274, 48);
+            this.bunifuThinButton21.TabIndex = 9;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(476, 139);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(476, 93);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 12;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(476, 48);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(143, 139);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(143, 93);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(143, 48);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picNhanVien
+            // 
+            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
+            this.picNhanVien.Location = new System.Drawing.Point(21, 20);
+            this.picNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Size = new System.Drawing.Size(86, 81);
+            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNhanVien.TabIndex = 1;
+            this.picNhanVien.TabStop = false;
             // 
             // btnSearch
             // 
@@ -574,6 +691,7 @@ namespace GUI
             this.bunifuCards2.PerformLayout();
             this.bunifuCards3.ResumeLayout(false);
             this.bunifuCards3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grvNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -581,7 +699,6 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grvNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.ResumeLayout(false);
 
@@ -598,28 +715,32 @@ namespace GUI
         private Bunifu.Framework.UI.BunifuThinButton2 btnThemNCC;
         private Custom_Control.CircularPictureBox picNhanVien;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl lblTenNV;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl lblDiaChi;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl lblSDT;
         private Bunifu.Framework.UI.BunifuCards bunifuCards3;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.LabelControl lblDiaChiKho;
         private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl lblKho;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl lblTinhTrang;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl lblNgaySinh;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl lblGioiTinh;
         private Bunifu.Framework.UI.BunifuCustomDataGrid grvNhanVien;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnNhomNguoiDung;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnThemNguoiDungVaoNhom;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnPhanQuyenNhomNguoiDung;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnDanhMucMH;
     }
 }

@@ -311,7 +311,7 @@
   <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMIAAAApCAYAAABnYvZwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJNSURBVHhe7dzPSxRhHMfx/lAvXbpEEB28iFSQUIFEUYEF
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJNSURBVHhe7dzPSxRhHMfx/lAvXbpEEB28iFSQUIFEUYEF
         BRGCHjx46OChgxc7bIF72MAgNSyFRUpEBTs8zfuRZ9gZxz23z/P+wgv2x7Oeno/zPDPznWu3pmaDVDqD
         IFUMglQxCFLFIEgVgyBVxgbhzvX74e3z5fB5ox+2Bt/D4fB3sKxJKeYr83azNwjvF1bC9I25znmOK4Pw
         8vG7+IcIAWF4Nvcm3L093zlW+h8xX5m3r58shk/rX+J8JhBdYy8FgdTwo8HmVpi5+ajxnTTJxs3tRhAY
@@ -545,4 +545,7 @@
         PepRj64uD49/AkKWBRhobGbnAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
