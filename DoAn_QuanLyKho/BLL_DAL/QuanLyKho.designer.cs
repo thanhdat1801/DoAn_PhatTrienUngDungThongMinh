@@ -4006,6 +4006,8 @@ namespace BLL_DAL
 		
 		private string _HINHANH;
 		
+		private System.Nullable<System.DateTime> _NGAYNHAP;
+		
 		private EntitySet<CHITIETPHIEUDAT> _CHITIETPHIEUDATs;
 		
 		private EntitySet<CHITIETPHIEUXUAT> _CHITIETPHIEUXUATs;
@@ -4036,6 +4038,8 @@ namespace BLL_DAL
     partial void OnDONGIAChanged();
     partial void OnHINHANHChanging(string value);
     partial void OnHINHANHChanged();
+    partial void OnNGAYNHAPChanging(System.Nullable<System.DateTime> value);
+    partial void OnNGAYNHAPChanged();
     #endregion
 		
 		public SANPHAM()
@@ -4189,6 +4193,26 @@ namespace BLL_DAL
 					this._HINHANH = value;
 					this.SendPropertyChanged("HINHANH");
 					this.OnHINHANHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NGAYNHAP", DbType="Date")]
+		public System.Nullable<System.DateTime> NGAYNHAP
+		{
+			get
+			{
+				return this._NGAYNHAP;
+			}
+			set
+			{
+				if ((this._NGAYNHAP != value))
+				{
+					this.OnNGAYNHAPChanging(value);
+					this.SendPropertyChanging();
+					this._NGAYNHAP = value;
+					this.SendPropertyChanged("NGAYNHAP");
+					this.OnNGAYNHAPChanged();
 				}
 			}
 		}

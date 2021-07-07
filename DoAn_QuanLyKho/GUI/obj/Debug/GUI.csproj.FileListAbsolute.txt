@@ -1132,3 +1132,5 @@ C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmPhanQuyen.resources
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmQuanLyNhomNguoiDung.resources
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmThemNguoiDungVaoNhom.resources
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmThemNhanVien.resources
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.frmSuaNhanVien.resources

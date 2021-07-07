@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace BLL_DAL
 {
-    public class QL_NhonmNguoiDung
+    public class KhoBLL_DAL
     {
         public static AppSetting setting = new AppSetting();
         QuanLyKhoDataContext quanLyKho = new QuanLyKhoDataContext(setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString"));
 
-        public QL_NhonmNguoiDung()
+        public KhoBLL_DAL()
         {
 
         }
 
-        public IQueryable loadDataNhomNguoiDung()
+        //Load gridView
+        public IQueryable loadDataKHo()
         {
-            var data = quanLyKho.NHOMNGUOIDUNGs.Select(s => new
+            var data = quanLyKho.THONGTINKHOs.Select(s => new
             {
-                ID_NHOM = s.ID_NHOM,
-                TENNHOM = s.TENNHOM
+                ID_KHO = s.ID_KHO
             }
             );
             return data as IQueryable;

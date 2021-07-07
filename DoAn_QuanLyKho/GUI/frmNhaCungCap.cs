@@ -17,5 +17,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void frmNhaCungCap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

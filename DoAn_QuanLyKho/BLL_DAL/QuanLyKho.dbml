@@ -183,6 +183,7 @@
       <Column Name="SOLUONG" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="DONGIA" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="HINHANH" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NGAYNHAP" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Association Name="SANPHAM_CHITIETPHIEUDAT" Member="CHITIETPHIEUDATs" ThisKey="ID_SP" OtherKey="ID_SP" Type="CHITIETPHIEUDAT" />
       <Association Name="SANPHAM_CHITIETPHIEUXUAT" Member="CHITIETPHIEUXUATs" ThisKey="ID_SP" OtherKey="ID_SP" Type="CHITIETPHIEUXUAT" />
       <Association Name="SANPHAM_CHITIETYCXUATHANG" Member="CHITIETYCXUATHANGs" ThisKey="ID_SP" OtherKey="ID_SP" Type="CHITIETYCXUATHANG" />

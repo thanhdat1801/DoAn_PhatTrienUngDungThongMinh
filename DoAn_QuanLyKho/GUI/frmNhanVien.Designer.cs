@@ -30,9 +30,9 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -51,12 +51,12 @@ namespace GUI
             this.lblTenNV = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.grvNhanVien = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSuaNCC = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnXoaNCC = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnThemNCC = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLamMoi = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnNhomNguoiDung = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnThemNguoiDungVaoNhom = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnPhanQuyenNhomNguoiDung = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -69,10 +69,15 @@ namespace GUI
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picNhanVien = new Custom_Control.CircularPictureBox();
+            this.btnSua = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnXoa = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnThem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCards2.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grvNhanVien)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -100,7 +105,7 @@ namespace GUI
             this.txtSearch.LineIdleColor = System.Drawing.Color.Gray;
             this.txtSearch.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtSearch.LineThickness = 3;
-            this.txtSearch.Location = new System.Drawing.Point(21, 18);
+            this.txtSearch.Location = new System.Drawing.Point(30, 18);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(474, 37);
@@ -135,12 +140,12 @@ namespace GUI
             this.bunifuCards2.Controls.Add(this.labelControl1);
             this.bunifuCards2.Controls.Add(this.picNhanVien);
             this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(626, 76);
+            this.bunifuCards2.Location = new System.Drawing.Point(3, 2);
             this.bunifuCards2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuCards2.Name = "bunifuCards2";
             this.bunifuCards2.RightSahddow = true;
             this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(828, 598);
+            this.bunifuCards2.Size = new System.Drawing.Size(891, 698);
             this.bunifuCards2.TabIndex = 5;
             this.bunifuCards2.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards2_Paint);
             // 
@@ -300,8 +305,8 @@ namespace GUI
             // 
             this.grvNhanVien.AllowUserToAddRows = false;
             this.grvNhanVien.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.grvNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.grvNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grvNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -310,31 +315,31 @@ namespace GUI
             this.grvNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grvNhanVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grvNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grvNhanVien.ColumnHeadersHeight = 50;
             this.grvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grvNhanVien.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grvNhanVien.DefaultCellStyle = dataGridViewCellStyle3;
             this.grvNhanVien.DoubleBuffered = true;
             this.grvNhanVien.EnableHeadersVisualStyles = false;
             this.grvNhanVien.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
             this.grvNhanVien.HeaderForeColor = System.Drawing.Color.White;
-            this.grvNhanVien.Location = new System.Drawing.Point(21, 74);
+            this.grvNhanVien.Location = new System.Drawing.Point(3, 2);
             this.grvNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grvNhanVien.Name = "grvNhanVien";
             this.grvNhanVien.ReadOnly = true;
@@ -345,14 +350,9 @@ namespace GUI
             this.grvNhanVien.RowTemplate.Height = 30;
             this.grvNhanVien.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.grvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grvNhanVien.Size = new System.Drawing.Size(366, 557);
+            this.grvNhanVien.Size = new System.Drawing.Size(513, 698);
             this.grvNhanVien.TabIndex = 1;
             this.grvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvNhanVien_CellClick);
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 20;
-            this.bunifuElipse2.TargetControl = this.grvNhanVien;
             // 
             // Column1
             // 
@@ -370,80 +370,61 @@ namespace GUI
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
-            // btnSuaNCC
+            // bunifuElipse2
             // 
-            this.btnSuaNCC.ActiveBorderThickness = 1;
-            this.btnSuaNCC.ActiveCornerRadius = 35;
-            this.btnSuaNCC.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSuaNCC.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSuaNCC.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSuaNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
-            this.btnSuaNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSuaNCC.BackgroundImage")));
-            this.btnSuaNCC.ButtonText = "Sửa";
-            this.btnSuaNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuaNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSuaNCC.IdleBorderThickness = 1;
-            this.btnSuaNCC.IdleCornerRadius = 20;
-            this.btnSuaNCC.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSuaNCC.IdleForecolor = System.Drawing.Color.White;
-            this.btnSuaNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSuaNCC.Location = new System.Drawing.Point(1284, 6);
-            this.btnSuaNCC.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSuaNCC.Name = "btnSuaNCC";
-            this.btnSuaNCC.Size = new System.Drawing.Size(95, 48);
-            this.btnSuaNCC.TabIndex = 8;
-            this.btnSuaNCC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuElipse2.ElipseRadius = 20;
+            this.bunifuElipse2.TargetControl = this.grvNhanVien;
             // 
-            // btnXoaNCC
+            // tableLayoutPanel1
             // 
-            this.btnXoaNCC.ActiveBorderThickness = 1;
-            this.btnXoaNCC.ActiveCornerRadius = 35;
-            this.btnXoaNCC.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnXoaNCC.ActiveForecolor = System.Drawing.Color.White;
-            this.btnXoaNCC.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnXoaNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
-            this.btnXoaNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoaNCC.BackgroundImage")));
-            this.btnXoaNCC.ButtonText = "Xóa";
-            this.btnXoaNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoaNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnXoaNCC.IdleBorderThickness = 1;
-            this.btnXoaNCC.IdleCornerRadius = 20;
-            this.btnXoaNCC.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnXoaNCC.IdleForecolor = System.Drawing.Color.White;
-            this.btnXoaNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnXoaNCC.Location = new System.Drawing.Point(1188, 6);
-            this.btnXoaNCC.Margin = new System.Windows.Forms.Padding(4);
-            this.btnXoaNCC.Name = "btnXoaNCC";
-            this.btnXoaNCC.Size = new System.Drawing.Size(95, 48);
-            this.btnXoaNCC.TabIndex = 7;
-            this.btnXoaNCC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.grvNhanVien, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 80);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(519, 702);
+            this.tableLayoutPanel1.TabIndex = 9;
             // 
-            // btnThemNCC
+            // tableLayoutPanel2
             // 
-            this.btnThemNCC.ActiveBorderThickness = 1;
-            this.btnThemNCC.ActiveCornerRadius = 35;
-            this.btnThemNCC.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThemNCC.ActiveForecolor = System.Drawing.Color.White;
-            this.btnThemNCC.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThemNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
-            this.btnThemNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemNCC.BackgroundImage")));
-            this.btnThemNCC.ButtonText = "Thêm";
-            this.btnThemNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThemNCC.IdleBorderThickness = 1;
-            this.btnThemNCC.IdleCornerRadius = 20;
-            this.btnThemNCC.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThemNCC.IdleForecolor = System.Drawing.Color.White;
-            this.btnThemNCC.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThemNCC.Location = new System.Drawing.Point(1092, 6);
-            this.btnThemNCC.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThemNCC.Name = "btnThemNCC";
-            this.btnThemNCC.Size = new System.Drawing.Size(95, 48);
-            this.btnThemNCC.TabIndex = 6;
-            this.btnThemNCC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.bunifuCards2, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(543, 80);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(897, 702);
+            this.tableLayoutPanel2.TabIndex = 10;
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.ActiveBorderThickness = 1;
+            this.btnLamMoi.ActiveCornerRadius = 35;
+            this.btnLamMoi.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLamMoi.ActiveForecolor = System.Drawing.Color.White;
+            this.btnLamMoi.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.btnLamMoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.BackgroundImage")));
+            this.btnLamMoi.ButtonText = "Có thay đổi? Làm mới danh sách ngay!";
+            this.btnLamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLamMoi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLamMoi.IdleBorderThickness = 1;
+            this.btnLamMoi.IdleCornerRadius = 20;
+            this.btnLamMoi.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLamMoi.IdleForecolor = System.Drawing.Color.White;
+            this.btnLamMoi.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLamMoi.Location = new System.Drawing.Point(776, 6);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(354, 48);
+            this.btnLamMoi.TabIndex = 11;
+            this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLamMoi.Visible = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnNhomNguoiDung
             // 
@@ -652,12 +633,90 @@ namespace GUI
             this.picNhanVien.TabIndex = 1;
             this.picNhanVien.TabStop = false;
             // 
+            // btnSua
+            // 
+            this.btnSua.ActiveBorderThickness = 1;
+            this.btnSua.ActiveCornerRadius = 35;
+            this.btnSua.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSua.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSua.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.btnSua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSua.BackgroundImage")));
+            this.btnSua.ButtonText = "Sửa";
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSua.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSua.IdleBorderThickness = 1;
+            this.btnSua.IdleCornerRadius = 20;
+            this.btnSua.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSua.IdleForecolor = System.Drawing.Color.White;
+            this.btnSua.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSua.Location = new System.Drawing.Point(1340, 6);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(95, 48);
+            this.btnSua.TabIndex = 8;
+            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.ActiveBorderThickness = 1;
+            this.btnXoa.ActiveCornerRadius = 35;
+            this.btnXoa.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnXoa.ActiveForecolor = System.Drawing.Color.White;
+            this.btnXoa.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.btnXoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoa.BackgroundImage")));
+            this.btnXoa.ButtonText = "Xóa";
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnXoa.IdleBorderThickness = 1;
+            this.btnXoa.IdleCornerRadius = 20;
+            this.btnXoa.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnXoa.IdleForecolor = System.Drawing.Color.White;
+            this.btnXoa.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnXoa.Location = new System.Drawing.Point(1239, 6);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(95, 48);
+            this.btnXoa.TabIndex = 7;
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.ActiveBorderThickness = 1;
+            this.btnThem.ActiveCornerRadius = 35;
+            this.btnThem.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThem.ActiveForecolor = System.Drawing.Color.White;
+            this.btnThem.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.btnThem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThem.BackgroundImage")));
+            this.btnThem.ButtonText = "Thêm";
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThem.IdleBorderThickness = 1;
+            this.btnThem.IdleCornerRadius = 20;
+            this.btnThem.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThem.IdleForecolor = System.Drawing.Color.White;
+            this.btnThem.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThem.Location = new System.Drawing.Point(1138, 6);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(95, 48);
+            this.btnThem.TabIndex = 6;
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(501, 18);
+            this.btnSearch.Location = new System.Drawing.Point(511, 18);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(39, 37);
@@ -672,12 +731,13 @@ namespace GUI
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 741);
-            this.Controls.Add(this.btnSuaNCC);
-            this.Controls.Add(this.btnXoaNCC);
-            this.Controls.Add(this.btnThemNCC);
-            this.Controls.Add(this.bunifuCards2);
-            this.Controls.Add(this.grvNhanVien);
+            this.ClientSize = new System.Drawing.Size(1452, 794);
+            this.Controls.Add(this.btnLamMoi);
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -692,6 +752,8 @@ namespace GUI
             this.bunifuCards3.ResumeLayout(false);
             this.bunifuCards3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grvNhanVien)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -710,9 +772,6 @@ namespace GUI
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
         private Bunifu.Framework.UI.BunifuImageButton btnSearch;
         private Bunifu.Framework.UI.BunifuCards bunifuCards2;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSuaNCC;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnXoaNCC;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnThemNCC;
         private Custom_Control.CircularPictureBox picNhanVien;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl lblTenNV;
@@ -733,7 +792,6 @@ namespace GUI
         private DevExpress.XtraEditors.LabelControl lblNgaySinh;
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.LabelControl lblGioiTinh;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid grvNhanVien;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -742,5 +800,12 @@ namespace GUI
         private Bunifu.Framework.UI.BunifuThinButton2 btnThemNguoiDungVaoNhom;
         private Bunifu.Framework.UI.BunifuThinButton2 btnPhanQuyenNhomNguoiDung;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDanhMucMH;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSua;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnXoa;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnThem;
+        public Bunifu.Framework.UI.BunifuCustomDataGrid grvNhanVien;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnLamMoi;
     }
 }

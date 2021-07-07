@@ -58,24 +58,13 @@ namespace BLL_DAL.Properties {
                 this["Password"] = value;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PC-DAI\\SQLEXPRESS;Initial Catalog=DoAn_QuanLyKho;Persist Security Inf" +
-            "o=True;User ID=sa;Password=sa2012;")]
-        public string DoAn_QuanLyKhoConnectionString {
-            get {
-                return ((string)(this["DoAn_QuanLyKhoConnectionString"]));
-            }
-        }
 
         AppSetting setting = new AppSetting();
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9LVSSPC\\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Securit" +
-            "y Info=True;User ID=sa;Password=sa2012;")]
+            "y Info=True;User ID=sa;Password=sa2012")]
         public string QL_KHOHANGConnectionString {
             get {
                 return setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString");
