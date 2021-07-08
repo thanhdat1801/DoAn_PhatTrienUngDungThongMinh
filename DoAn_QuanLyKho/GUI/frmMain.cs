@@ -93,6 +93,8 @@ namespace GUI
         {
             lblHeader.Text = "Sản phẩm";
             indicator.Top = ((Control)sender).Top;
+            frmHangHoa frm = new frmHangHoa();
+            openSubForm(frm);
         }
 
         private void btnBaoCao_5_Click(object sender, EventArgs e)
@@ -142,6 +144,11 @@ namespace GUI
         {
             frmCapNhatTT frm = new frmCapNhatTT(MaNhanVien);
             frm.Show();
+        }
+
+        private void mainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

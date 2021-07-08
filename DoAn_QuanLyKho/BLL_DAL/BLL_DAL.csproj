@@ -60,8 +60,15 @@
   <ItemGroup>
     <Compile Include="Add_NhaCungCap.cs" />
     <Compile Include="DanhMucMH_BLL_DAL.cs" />
+    <Compile Include="Hanghoa_BLL_DAL.cs" />
+    <Compile Include="LoaiSanPham_BLL_DAL.cs" />
     <Compile Include="NhanVienBLL_DAL.cs" />
     <Compile Include="QL_NhonmNguoiDung.cs" />
+    <Compile Include="QuanLyKho.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKho.dbml</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="AppSetting.cs" />
     <Compile Include="Check_Login.cs" />
@@ -79,11 +86,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyKho.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyKho.dbml</DependentUpon>
-    </Compile>
     <Compile Include="SQLHelper.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,18 +94,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="QuanLyKho.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="QuanLyKho.dbml.layout">
-      <DependentUpon>QuanLyKho.dbml</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -113,6 +106,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QuanLyKho.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QuanLyKho.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKho.dbml.layout">
+      <DependentUpon>QuanLyKho.dbml</DependentUpon>
+    </None>
     <None Include="Resources\publicfix_32x32.png" />
   </ItemGroup>
   <ItemGroup>
