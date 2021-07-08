@@ -14,7 +14,7 @@ namespace GUI
 {
     public partial class frmQuanLyNhomNguoiDung : DevExpress.XtraEditors.XtraForm
     {
-        QL_NhonmNguoiDung nhonmNguoiDung = new QL_NhonmNguoiDung();
+        QL_NhomNguoiDung nhonmNguoiDung = new QL_NhomNguoiDung();
         public frmQuanLyNhomNguoiDung()
         {
             InitializeComponent();
@@ -34,6 +34,63 @@ namespace GUI
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnTaoMoi_Click(object sender, EventArgs e)
+        {
+            txtTenNhom.Enabled = true;
+            txtNhomNguoiDung.Enabled = true;
+            txtNhomNguoiDung.Focus();
+            txtTenNhom.ResetText();
+            txtNhomNguoiDung.ResetText();
+        }
+
+        private void btnThemNCC_Click(object sender, EventArgs e)
+        {
+            string tennhom = txtTenNhom.Text;
+            string id = txtNhomNguoiDung.Text;
+            if (nhonmNguoiDung.themNhomNguoiDung(id, tennhom) == true)
+            {
+                grvNhomNguoiDung.DataSource = nhonmNguoiDung.loadDataNhomNguoiDung();
+                MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtTenNhom.Enabled = false;
+                txtNhomNguoiDung.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Thêm thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnXoaNCC_Click(object sender, EventArgs e)
+        {
+            string id = grvNhomNguoiDung.CurrentRow.Cells[0].Value.ToString();
+            if (nhonmNguoiDung.xoaNhomNguoiDung(id) == true)
+            {
+                grvNhomNguoiDung.DataSource = nhonmNguoiDung.loadDataNhomNguoiDung();
+                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSuaNCC_Click(object sender, EventArgs e)
+        {
+            string id = grvNhomNguoiDung.CurrentRow.Cells[0].Value.ToString();
+            string tennhom = txtTenNhom.Text;
+            if (nhonmNguoiDung.suaNhomNguoiDung(id, tennhom) == true)
+            {
+                grvNhomNguoiDung.DataSource = nhonmNguoiDung.loadDataNhomNguoiDung();
+                MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtTenNhom.Enabled = false;
+                txtNhomNguoiDung.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Sửa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

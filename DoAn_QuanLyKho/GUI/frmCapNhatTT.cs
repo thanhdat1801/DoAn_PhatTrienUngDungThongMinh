@@ -74,7 +74,7 @@ namespace GUI
                 gioitinh = "Nữ";
 
 
-            DialogResult dialogResult = MessageBox.Show("Thông báo", "Bạn có chắc chắn!", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Yes)
             {
                 if (txtUsername.Text.Length != 0)

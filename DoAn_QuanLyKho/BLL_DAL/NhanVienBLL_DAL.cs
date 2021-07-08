@@ -116,5 +116,45 @@ namespace BLL_DAL
         {
             return quanLyKho.NGUOIDUNGs.SingleOrDefault(t => t.ID_DN.Equals(id));
         }
+
+        //Thêm người dùng
+        public bool themNguoiDung(int id_kho, string id, string ten, string sdt, string diachi, DateTime ngaysinh, string gioitinh, string pass)
+        {
+            try
+            {
+                NGUOIDUNG nd = new NGUOIDUNG();
+                nd.ID_KHO = id_kho;
+                nd.ID_DN = id;
+                nd.TEN = ten;
+                nd.SDT = sdt;
+                nd.DIACHI = diachi;
+                nd.NGAYSINH = ngaysinh;
+                nd.GIOITINH = gioitinh;
+                nd.MATKHAU = pass;
+                quanLyKho.NGUOIDUNGs.InsertOnSubmit(nd);
+                quanLyKho.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        //Xóa người dùng
+        public bool xoaNguoiDung(string id)
+        {
+            try
+            {
+                NGUOIDUNG nd = quanLyKho.NGUOIDUNGs.Where(s => s.ID_DN == id).FirstOrDefault();
+                quanLyKho.NGUOIDUNGs.DeleteOnSubmit(nd);
+                quanLyKho.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

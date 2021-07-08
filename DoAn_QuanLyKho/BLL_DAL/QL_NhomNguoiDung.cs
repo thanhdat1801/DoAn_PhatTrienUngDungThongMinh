@@ -6,34 +6,35 @@ using System.Threading.Tasks;
 
 namespace BLL_DAL
 {
-    public class DanhMucMH_BLL_DAL
+    public class QL_NhomNguoiDung
     {
         public static AppSetting setting = new AppSetting();
         QuanLyKhoDataContext quanLyKho = new QuanLyKhoDataContext(setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString"));
 
-        public DanhMucMH_BLL_DAL()
+        public QL_NhomNguoiDung()
         {
 
         }
 
-        public IQueryable loadDataDanhMucMH()
+        public IQueryable loadDataNhomNguoiDung()
         {
-            var data = quanLyKho.MANHINHs.Select(s => new
+            var data = quanLyKho.NHOMNGUOIDUNGs.Select(s => new
             {
-                ID_MANHINH = s.ID_MANHINH,
-                TENMANHINH = s.TENMANHINH
+                ID_NHOM = s.ID_NHOM,
+                TENNHOM = s.TENNHOM
             }
             );
             return data as IQueryable;
         }
 
-        public bool themDanhMuc_MH(string tenmh)
+        public bool themNhomNguoiDung(string id, string tennhom)
         {
             try
             {
-                MANHINH mh = new MANHINH();
-                mh.TENMANHINH = tenmh;
-                quanLyKho.MANHINHs.InsertOnSubmit(mh);
+                NHOMNGUOIDUNG mh = new NHOMNGUOIDUNG();
+                mh.ID_NHOM = id;
+                mh.TENNHOM = tennhom;
+                quanLyKho.NHOMNGUOIDUNGs.InsertOnSubmit(mh);
                 quanLyKho.SubmitChanges();
                 return true;
             }
@@ -43,12 +44,12 @@ namespace BLL_DAL
             }
         }
 
-        public bool xoaDanhMuc_MH(int id)
+        public bool xoaNhomNguoiDung(string id)
         {
             try
             {
-                MANHINH mh = quanLyKho.MANHINHs.Where(s => s.ID_MANHINH == id).FirstOrDefault();
-                quanLyKho.MANHINHs.DeleteOnSubmit(mh);
+                NHOMNGUOIDUNG mh = quanLyKho.NHOMNGUOIDUNGs.Where(s => s.ID_NHOM == id).FirstOrDefault();
+                quanLyKho.NHOMNGUOIDUNGs.DeleteOnSubmit(mh);
                 quanLyKho.SubmitChanges();
                 return true;
             }
@@ -58,12 +59,12 @@ namespace BLL_DAL
             }
         }
 
-        public bool suaDanhMuc_MH(int id, string tenmh)
+        public bool suaNhomNguoiDung(string id, string tennhom)
         {
             try
             {
-                MANHINH mh = quanLyKho.MANHINHs.Where(s => s.ID_MANHINH == id).FirstOrDefault();
-                mh.TENMANHINH = tenmh;
+                NHOMNGUOIDUNG mh = quanLyKho.NHOMNGUOIDUNGs.Where(s => s.ID_NHOM == id).FirstOrDefault();
+                mh.TENNHOM = tennhom;
                 quanLyKho.SubmitChanges();
                 return true;
             }

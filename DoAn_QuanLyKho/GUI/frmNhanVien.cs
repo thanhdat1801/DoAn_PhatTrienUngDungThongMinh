@@ -18,6 +18,26 @@ namespace GUI
         public frmNhanVien()
         {
             InitializeComponent();
+            this.Load += new EventHandler(frmNhanVien_Load);
+        }
+
+        public BindingSource bindingSource1;
+        private void InitializeData()
+        {
+            bindingSource1 = new System.Windows.Forms.BindingSource();
+            bindingSource1.BindingComplete += new BindingCompleteEventHandler(bindingSource1_BindingComplete);
+            bindingSource1.DataSource = nv.loadDataNguoiDung();
+            grvNhanVien.DataSource = bindingSource1;
+        }
+
+        private void bindingSource1_BindingComplete(object sender, BindingCompleteEventArgs e)
+        {
+            if (e.BindingCompleteContext == BindingCompleteContext.DataSourceUpdate
+                && e.Exception == null)
+            {
+
+                e.Binding.BindingManagerBase.EndCurrentEdit();
+            }
         }
 
         private void bunifuCards2_Paint(object sender, PaintEventArgs e)
@@ -32,7 +52,7 @@ namespace GUI
 
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
-            grvNhanVien.DataSource = nv.loadDataNguoiDung();
+            InitializeData();
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
@@ -83,6 +103,40 @@ namespace GUI
         private void btnPhanQuyenNhomNguoiDung_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            frmThemNhanVien frm = new frmThemNhanVien();
+            frm.Show();
+            btnLamMoi.Enabled = true;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
+            if (nv.xoaNguoiDung(id) == true)
+            {
+                grvNhanVien.DataSource = nv.loadDataNguoiDung();
+                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            frmSuaNhanVien frm = new frmSuaNhanVien(bindingSource1);
+            frm.Show();
+            btnLamMoi.Enabled = true;
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            grvNhanVien.DataSource = nv.loadDataNguoiDung();
+            grvNhanVien.Refresh();
         }
     }
 }
